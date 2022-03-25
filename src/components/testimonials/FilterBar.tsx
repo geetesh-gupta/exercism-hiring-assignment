@@ -36,7 +36,7 @@ const TestimonialsFilterBar: React.FC<TestimonialsFilterBarProps> = ({
         />
       </div>
       <select
-        className=" bg-gray-200 rounded px-4 h-10 w-72 text-sm"
+        className=" bg-gray-200 rounded px-4 h-10 w-72 text-sm hover:bg-white border-2"
         value={selectedSortType}
         onChange={(e) => {
           onSortTypeChange(
