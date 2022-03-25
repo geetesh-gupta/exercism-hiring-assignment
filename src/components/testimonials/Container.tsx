@@ -91,6 +91,7 @@ const TestimonialsContainer: React.FC = () => {
     setSelectedSortType(sortType);
   };
   const onTracksChange = (track: TrackWithTestimonialCountType): void => {
+    setActivePage(1);
     setSelectedTrack(track);
   };
   const onPageChange = (oldPage: number, newPage: number): void => {
