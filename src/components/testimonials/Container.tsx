@@ -4,10 +4,11 @@ import TestimonialsList from "./List";
 import {
   addTestimonialCountToTracks,
   APIRoutes,
+  defaultTrack,
   filterTracksBySlug,
+  sumTestimonialsCount,
 } from "../../utils/apiUtils";
 import { addQueriesToUrl } from "../../utils/urlUtils";
-import { defaultTrack } from "../tracks/Dropdown";
 import useFetch from "../../hooks/useFetch";
 import useDebounce from "../../hooks/useDebounce";
 import {
@@ -25,12 +26,14 @@ const TestimonialsContainer: React.FC = () => {
     SortType.newest_first
   );
   const [activePage, setActivePage] = useState(1);
-  const [selectedTrack, setSelectedTrack] =
-    useState<TrackWithTestimonialCountType>(defaultTrack);
-  const [tracks, setTracks] = useState<{ [key: string]: number }>({});
+  const [tracks, setTracks] = useState<{ [key: string]: number }>({
+    [defaultTrack.slug]: 0,
+  });
   const [tracksDetails, setTracksDetails] = useState<
     TrackWithTestimonialCountType[]
-  >([]);
+  >([defaultTrack]);
+  const [selectedTrack, setSelectedTrack] =
+    useState<TrackWithTestimonialCountType>(tracksDetails[0]);
   const [url, setUrl] = useState<string>("");
   const debouncedExerciseQuery = useDebounce(exerciseQuery, 200);
   const {
@@ -70,7 +73,16 @@ const TestimonialsContainer: React.FC = () => {
       filteredTracks,
       tracks
     );
-    setTracksDetails(filteredTracksWithTestimonialCount);
+
+    setTracksDetails([
+      {
+        ...defaultTrack,
+        testimonialCount: sumTestimonialsCount(
+          filteredTracksWithTestimonialCount
+        ),
+      },
+      ...filteredTracksWithTestimonialCount,
+    ]);
   }, [tracks, allTracks]);
 
   useEffect(() => {
@@ -81,7 +93,7 @@ const TestimonialsContainer: React.FC = () => {
     if (newTracks.length === 0) return;
     const trackCounts = testimonialsApiResp?.testimonials.track_counts;
     setTracks(
-      newTracks.reduce((o, key) => ({ ...o, [key]: trackCounts[key] }), {})
+      newTracks.reduce((o, key) => ({ ...o, [key]: trackCounts[key] }), tracks)
     );
   }, [testimonialsApiResp]);
 
