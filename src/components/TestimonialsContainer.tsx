@@ -1,24 +1,24 @@
 import { useEffect, useState } from "react";
 import PaginationHandler from "./PaginationHandler";
-import TestimonialsList from "./List";
+import TestimonialsList from "./TestimonialsList";
 import {
   addTestimonialCountToTracks,
   APIRoutes,
   defaultTrack,
   filterTracksBySlug,
   sumTestimonialsCount,
-} from "../../utils/apiUtils";
-import { addQueriesToUrl } from "../../utils/urlUtils";
-import useFetch from "../../hooks/useFetch";
-import useDebounce from "../../hooks/useDebounce";
+} from "../utils/apiUtils";
+import { addQueriesToUrl } from "../utils/urlUtils";
+import useFetch from "../hooks/useFetch";
+import useDebounce from "../hooks/useDebounce";
 import {
   TracksApiRespType,
   TrackWithTestimonialCountType,
-} from "../../types/tracks";
-import { SortType, TestimonialsApiRespType } from "../../types/testimonials";
+} from "../types/tracks";
+import { SortType, TestimonialsApiRespType } from "../types/testimonials";
 import TestimonialsFilterBar from "./FilterBar";
-import loaderIcon from "../../assets/images/loader.svg";
-import Logo from "../../elements/Logo";
+import loaderIcon from "../assets/images/loader.svg";
+import Logo from "../elements/Logo";
 
 const TestimonialsContainer: React.FC = () => {
   const [exerciseQuery, setExerciseQuery] = useState("");

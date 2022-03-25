@@ -1,6 +1,6 @@
-import Logo from "../../elements/Logo";
-import { TrackWithTestimonialCountType } from "../../types/tracks";
-import Dropdown, { DropdownListItem } from "../../elements/Dropdown";
+import Logo from "../elements/Logo";
+import { TrackWithTestimonialCountType } from "../types/tracks";
+import Dropdown, { DropdownListItem } from "../elements/Dropdown";
 
 export type TracksDropdownProps = {
   tracks: TrackWithTestimonialCountType[];

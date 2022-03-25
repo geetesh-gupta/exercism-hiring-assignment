@@ -1,10 +1,26 @@
-import Icon from "../../elements/Icon";
-import Logo from "../../elements/Logo";
-import { formatTimeToRelative } from "../../utils/dateUtils";
-import chevronRight from "../../assets/images/chevronRight.svg";
-import { TestimonialsApiRespResult } from "../../types/testimonials";
+import Icon from "../elements/Icon";
+import Logo from "../elements/Logo";
+import { formatTimeToRelative } from "../utils/dateUtils";
+import chevronRight from "../assets/images/chevronRight.svg";
+import { TestimonialsApiRespResult } from "../types/testimonials";
 
-const TestimonialsListItem: React.FC<TestimonialsApiRespResult> = ({
+type TestimonialsListProps = {
+  listItems: TestimonialsApiRespResult[];
+};
+
+export const TestimonialsList: React.FC<TestimonialsListProps> = ({
+  listItems,
+}) => {
+  return (
+    <div className="divide-y">
+      {listItems.map((listItem) => (
+        <TestimonialsListItem key={listItem.id} {...listItem} />
+      ))}
+    </div>
+  );
+};
+
+export const TestimonialsListItem: React.FC<TestimonialsApiRespResult> = ({
   id,
   track,
   exercise,
@@ -34,4 +50,4 @@ const TestimonialsListItem: React.FC<TestimonialsApiRespResult> = ({
   );
 };
 
-export default TestimonialsListItem;
+export default TestimonialsList;

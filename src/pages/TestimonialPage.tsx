@@ -1,4 +1,4 @@
-import TestimonialsContainer from "../components/testimonials/Container";
+import TestimonialsContainer from "../components/TestimonialsContainer";
 
 function TestimonialsPage() {
   return (

@@ -1,7 +1,7 @@
-import Search from "../../elements/Search";
-import { camelize } from "../../utils/stringUtils";
+import Search from "../elements/Search";
+import { camelize } from "../utils/stringUtils";
 import TracksDropdown, { TracksDropdownProps } from "./TracksDropdown";
-import { SortType } from "../../types/testimonials";
+import { SortType } from "../types/testimonials";
 
 type TestimonialsFilterBarProps = {
   searchQuery: string;
@@ -22,13 +22,11 @@ const TestimonialsFilterBar: React.FC<TestimonialsFilterBarProps> = ({
   return (
     <div className="flex text-gray-700 items-center w-full justify-between py-2 px-4">
       <div className="flex items-center">
-        <div>
-          <TracksDropdown
-            tracks={tracks}
-            selectedTrack={selectedTrack}
-            onTracksChange={onTracksChange}
-          />
-        </div>
+        <TracksDropdown
+          tracks={tracks}
+          selectedTrack={selectedTrack}
+          onTracksChange={onTracksChange}
+        />
         <Search
           value={searchQuery}
           onChange={onSearchQueryChange}

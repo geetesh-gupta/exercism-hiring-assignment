@@ -53,18 +53,15 @@ type DropdownListItemType =
 
 type DropdownListItemProps = {
   onClick: MouseEventHandler<HTMLLIElement>;
-  key: string | number;
 };
 
 export const DropdownListItem: React.FC<DropdownListItemProps> = ({
   children,
   onClick,
-  key,
 }) => (
   <li
     className="bg-white hover:bg-gray-200 py-2 px-6 flex whitespace-no-wrap items-center text-left pointer"
     onClick={onClick}
-    key={key}
   >
     {children}
   </li>

@@ -1,12 +1,12 @@
-import Icon from "../../elements/Icon";
+import Icon from "../elements/Icon";
 import {
   ceilPaginateRange,
   floorPaginateRange,
   paginateNumsRange,
-} from "../../utils/pageUtils";
-import arrowLeft from "../../assets/images/arrowLeft.svg";
-import arrowRight from "../../assets/images/arrowRight.svg";
-import Button from "../../elements/Button";
+} from "../utils/pageUtils";
+import arrowLeft from "../assets/images/arrowLeft.svg";
+import arrowRight from "../assets/images/arrowRight.svg";
+import Button from "../elements/Button";
 
 type PaginationHandlerProps = {
   activePage: number;
