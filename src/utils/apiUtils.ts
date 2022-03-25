@@ -2,11 +2,26 @@ import {
   TrackType,
   TrackWithTestimonialCountType,
 } from "../components/tracks/types";
+import exercismLogo from "../assets/images/exercismLogo.svg";
 
 export enum APIRoutes {
   "Tracks" = "https://exercism.org/api/v2/tracks",
   "Testimonials" = "https://exercism.org/api/v2/hiring/testimonials",
 }
+
+export const defaultTrack: TrackWithTestimonialCountType = {
+  slug: "all",
+  title: "All",
+  web_url: "https://exercism.org/tracks",
+  icon_url: exercismLogo,
+  testimonialCount: 0,
+};
+
+export const sumTestimonialsCount = (
+  allTracks: TrackWithTestimonialCountType[]
+) => {
+  return allTracks.reduce((total, track) => total + track.testimonialCount, 0);
+};
 
 export const filterTracksBySlug = (
   allTracks: TrackType[],
