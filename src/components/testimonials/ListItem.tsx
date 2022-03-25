@@ -5,6 +5,7 @@ import chevronRight from "../../assets/images/chevronRight.svg";
 import { TestimonialsApiRespResult } from "./types";
 
 const TestimonialsListItem: React.FC<TestimonialsApiRespResult> = ({
+  id,
   track,
   exercise,
   mentor,
@@ -12,7 +13,10 @@ const TestimonialsListItem: React.FC<TestimonialsApiRespResult> = ({
   created_at,
 }) => {
   return (
-    <a className="grid grid-cols-testimonial gap-6 items-center text-left px-6 py-2 bg-white text-gray-700 hover:bg-gray-200 cursor-pointer">
+    <a
+      className="grid grid-cols-testimonial gap-6 items-center text-left px-6 py-2 bg-white text-gray-700 hover:bg-gray-200 cursor-pointer"
+      href={`/testimonials/${id}`}
+    >
       <Logo src={track.icon_url} alt={track.title} />
       <Logo src={mentor.avatar_url} alt={mentor.handle} />
       <div className="flex flex-col">
