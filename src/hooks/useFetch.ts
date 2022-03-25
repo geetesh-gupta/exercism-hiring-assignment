@@ -14,6 +14,7 @@ function useFetch<T>(url: string) {
 
     const fetchData = async () => {
       if (!url) return;
+      setIsLoading(true);
       try {
         const response = await axios.get(url, {
           cancelToken: request.token,

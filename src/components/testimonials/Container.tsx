@@ -16,6 +16,8 @@ import {
 } from "../tracks/types";
 import { SortType, TestimonialsApiRespType } from "./types";
 import TestimonialsFilterBar from "./FilterBar";
+import loaderIcon from "../../assets/images/loader.svg";
+import Logo from "../../elements/Logo";
 
 const TestimonialsContainer: React.FC = () => {
   const [exerciseQuery, setExerciseQuery] = useState("");
@@ -99,7 +101,7 @@ const TestimonialsContainer: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col divide-y-2 rounded drop-shadow-xl shadow-gray-700 bg-white m-8 max-w-[90rem] min-w-[83rem]">
+    <div className="flex flex-col divide-y-2 rounded drop-shadow-xl shadow-gray-700 bg-white m-8 min-h-[70vh] max-w-[90rem] min-w-[83rem] justify-between">
       <TestimonialsFilterBar
         searchQuery={exerciseQuery}
         onSearchQueryChange={onSearchQueryChange}
@@ -109,11 +111,23 @@ const TestimonialsContainer: React.FC = () => {
         selectedTrack={selectedTrack}
         onTracksChange={onTracksChange}
       />
-      <TestimonialsList
-        listItems={
-          testimonialsApiResp ? testimonialsApiResp.testimonials.results : []
-        }
-      />
+      <div className="flex-1 relative">
+        <TestimonialsList
+          listItems={
+            testimonialsApiResp ? testimonialsApiResp.testimonials.results : []
+          }
+        />
+        {testimonialsLoading ? (
+          <div className="flex items-center justify-center h-full w-full absolute top-0 left-0">
+            <div className="h-full w-full opacity-30 bg-white absolute top-0 left-0" />
+            <div className="animate-[spin_4s_infinite_linear]">
+              <Logo src={loaderIcon} alt="Loading icon" />
+            </div>
+          </div>
+        ) : (
+          <></>
+        )}
+      </div>
       <PaginationHandler
         activePage={activePage}
         numPages={
