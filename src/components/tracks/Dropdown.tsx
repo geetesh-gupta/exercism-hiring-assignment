@@ -52,7 +52,7 @@ const TracksDropdown: React.FC<TracksDropdownProps> = ({
         </button>
         <ul
           role="list"
-          className="group-hover:block absolute hidden text-gray-700 rounded min-w-max bg-white p-2 pointer z-10"
+          className="group-hover:block absolute hidden text-gray-700 rounded min-w-max bg-white p-2 pointer z-20 h-96 overflow-y-scroll drop-shadow-md"
         >
           <TrackDropdownItem
             track={{
