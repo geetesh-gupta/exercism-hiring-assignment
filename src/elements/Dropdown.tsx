@@ -8,9 +8,11 @@ export const Dropdown: React.FC<{
   selected?: { icon_url?: string; title: string };
   showLogo?: boolean;
   children: DropdownListItemType;
-}> = ({ selected, showLogo, children }) =>
+  className?: string;
+  listClassName?: string;
+}> = ({ selected, showLogo, children, className = "", listClassName = "" }) =>
   selected ? (
-    <div className="group inline-block relative">
+    <div className={"group inline-block relative " + className}>
       <button className="bg-white text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center">
         <>
           <span className="mr-3">
@@ -21,16 +23,9 @@ export const Dropdown: React.FC<{
             )}
           </span>
           <Icon src={chevronDown} alt={"Open dropdown icon"} />
-          {/* <svg
-                      className="fill-current h-4 w-4"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                    </svg> */}
         </>
       </button>
-      <DropdownList>{children}</DropdownList>
+      <DropdownList className={listClassName}>{children}</DropdownList>
     </div>
   ) : (
     <Logo src={loaderLogo} alt="Loading dropdown items" />
@@ -38,10 +33,14 @@ export const Dropdown: React.FC<{
 
 export const DropdownList: React.FC<{
   children: DropdownListItemType;
-}> = ({ children }) => (
+  className?: string;
+}> = ({ children, className = "" }) => (
   <ul
     role="list"
-    className="group-hover:block absolute hidden text-gray-700 rounded min-w-max bg-white p-2 pointer z-20 h-96 overflow-y-scroll drop-shadow-md"
+    className={
+      "group-hover:block absolute hidden text-gray-700 rounded min-w-max bg-white p-2 pointer z-20 drop-shadow-md " +
+      className
+    }
   >
     {children}
   </ul>
@@ -60,7 +59,7 @@ export const DropdownListItem: React.FC<DropdownListItemProps> = ({
   onClick,
 }) => (
   <li
-    className="bg-white hover:bg-gray-200 py-2 px-6 flex whitespace-no-wrap items-center text-left pointer"
+    className="bg-white hover:bg-gray-200 py-2 px-6 flex whitespace-no-wrap items-center text-left cursor-pointer"
     onClick={onClick}
   >
     {children}
