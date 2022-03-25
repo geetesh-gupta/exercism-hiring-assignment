@@ -1,3 +1,4 @@
+import TestimonialsPage from "./pages/TestimonialPage";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           Header TODO
         </a>
       </header>
+      <TestimonialsPage />
     </div>
   );
 }
