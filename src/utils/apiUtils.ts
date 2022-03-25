@@ -1,7 +1,4 @@
-import {
-  TrackType,
-  TrackWithTestimonialCountType,
-} from "../components/tracks/types";
+import { TrackType, TrackWithTestimonialCountType } from "../types/tracks";
 import exercismLogo from "../assets/images/exercismLogo.svg";
 
 export enum APIRoutes {

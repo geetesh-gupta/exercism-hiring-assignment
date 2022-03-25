@@ -1,7 +1,7 @@
 import Search from "../../elements/Search";
 import { camelize } from "../../utils/stringUtils";
-import TracksDropdown, { TracksDropdownProps } from "../tracks/TracksDropdown";
-import { SortType } from "./types";
+import TracksDropdown, { TracksDropdownProps } from "./TracksDropdown";
+import { SortType } from "../../types/testimonials";
 
 type TestimonialsFilterBarProps = {
   searchQuery: string;

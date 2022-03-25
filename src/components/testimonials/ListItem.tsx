@@ -2,7 +2,7 @@ import Icon from "../../elements/Icon";
 import Logo from "../../elements/Logo";
 import { formatTimeToRelative } from "../../utils/dateUtils";
 import chevronRight from "../../assets/images/chevronRight.svg";
-import { TestimonialsApiRespResult } from "./types";
+import { TestimonialsApiRespResult } from "../../types/testimonials";
 
 const TestimonialsListItem: React.FC<TestimonialsApiRespResult> = ({
   id,

@@ -1,5 +1,5 @@
 import TestimonialsListItem from "./ListItem";
-import { TestimonialsApiRespResult } from "./types";
+import { TestimonialsApiRespResult } from "../../types/testimonials";
 
 type TestimonialsListProps = {
   listItems: TestimonialsApiRespResult[];

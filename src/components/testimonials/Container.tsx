@@ -14,8 +14,8 @@ import useDebounce from "../../hooks/useDebounce";
 import {
   TracksApiRespType,
   TrackWithTestimonialCountType,
-} from "../tracks/types";
-import { SortType, TestimonialsApiRespType } from "./types";
+} from "../../types/tracks";
+import { SortType, TestimonialsApiRespType } from "../../types/testimonials";
 import TestimonialsFilterBar from "./FilterBar";
 import loaderIcon from "../../assets/images/loader.svg";
 import Logo from "../../elements/Logo";
