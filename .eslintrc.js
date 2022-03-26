@@ -12,4 +12,7 @@ module.exports = {
     jest: true,
     node: true,
   },
+  rules: {
+    "@typescript-eslint/no-var-requires": "off",
+  },
 };
