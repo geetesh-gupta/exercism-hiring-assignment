@@ -114,7 +114,7 @@ const TestimonialsContainer: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col divide-y-2 rounded drop-shadow-xl shadow-gray-700 bg-white m-8 min-h-[70vh] max-w-[90rem] min-w-[83rem] justify-between">
+    <div className="m-8 flex min-h-[70vh] min-w-[83rem] max-w-[90rem] flex-col justify-between divide-y-2 rounded-lg bg-default drop-shadow-lg">
       <TestimonialsFilterBar
         searchQuery={exerciseQuery}
         onSearchQueryChange={onSearchQueryChange}
@@ -124,15 +124,15 @@ const TestimonialsContainer: React.FC = () => {
         selectedTrack={selectedTrack}
         onTracksChange={onTracksChange}
       />
-      <div className="flex-1 relative">
+      <div className="relative flex-1">
         <TestimonialsList
           listItems={
             testimonialsApiResp ? testimonialsApiResp.testimonials.results : []
           }
         />
         {testimonialsLoading ? (
-          <div className="flex items-center justify-center h-full w-full absolute top-0 left-0">
-            <div className="h-full w-full opacity-30 bg-white absolute top-0 left-0" />
+          <div className="absolute top-0 left-0 flex h-full w-full items-center justify-center">
+            <div className="absolute top-0 left-0 h-full w-full bg-default opacity-30" />
             <div className="animate-[spin_4s_infinite_linear]">
               <Logo src={loaderIcon} alt="Loading icon" />
             </div>

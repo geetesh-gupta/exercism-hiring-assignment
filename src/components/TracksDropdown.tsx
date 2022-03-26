@@ -26,16 +26,19 @@ const TracksDropdown: React.FC<TracksDropdownProps> = ({
         <DropdownListItem
           key={track.slug}
           onClick={() => onTracksChange(track)}
+          className="min-w-[360px]"
         >
           <input
             type="radio"
             checked={selectedTrack.slug === track.slug}
             readOnly
-            className="w-5 h-5 mr-4"
+            className="mr-6 h-5 w-5"
           ></input>
           <Logo src={track.icon_url} alt={track.title} />
-          <p className="grow mx-4 font-bold ">{track.title}</p>
-          <p className="font-bold border-1 rounded-2xl border-gray-700 px-2 py-1">
+          <p className="mx-4 grow text-lg font-medium leading-md text-secondary ">
+            {track.title}
+          </p>
+          <p className="rounded-2xl border-1 border-gray-700 px-3 py-1 text-sm leading-md text-labelSecondary ">
             {track.testimonialCount}
           </p>
         </DropdownListItem>

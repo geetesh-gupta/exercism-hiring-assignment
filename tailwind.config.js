@@ -4,19 +4,71 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Poppins", ...defaultTheme.fontFamily.sans],
+      },
+      fontSize: {
+        sm: "14px",
+        md: "15px",
+        lg: "16px",
+      },
+      lineHeight: {
+        xs: "19.5px",
+        sm: "21px",
+        md: "22.5px",
+        lg: "24px",
+        xl: "25.5px",
+      },
+      textColor: {
+        labelDefault: "#130B43",
+        labelSecondary: "#5C5589",
+        labelTertiary: "#76709F",
+        default: "#3F3A5A",
+        secondary: "#3D3B45",
+        link: "#2E57E8",
+      },
+      backgroundColor: {
+        default: "#FFFFFF",
+        defaultHover: "#F4F7FD",
+        secondaryHover: "#F0F3F9",
+        input: "#F0F3F9",
+        inputFocus: "#FFFFFF",
+        paginationCurrent: "#E1EBFF",
+        modal: "rgba(251, 252, 254, 0.7)",
+        disabled: "#E0E0ED",
+      },
+      borderColor: {
+        input: "#8480A0",
+        inputFocus: "#2E57E8",
+        tabSelected: "#A7B7D6",
+        paginationCurrent: "#6E82AA",
+        button: "#D5D8E4",
+      },
+      dropShadow: {
+        sm: "0px 4px 16px rgba(79, 114, 205, 0.1)",
+        md: "0px 4px 24px rgba(79, 114, 205, 0.15)",
+        lg: "0px 4px 42px rgba(79, 114, 205, 0.15)",
+      },
+      boxShadow: {
+        input: "0px 0px 2px 2px rgba(46, 87, 232, 0.25)",
+        button: "0px 1px 0px 1px rgba(203, 201, 217, 0.6)",
+      },
+      padding: {
+        md: "8px 16px",
+        lg: "12px 21px",
+        xl: "14px 32px",
+      },
+      margin: {
+        button: "0px 10px",
+      },
       borderWidth: {
         1: "1px",
       },
       gridTemplateColumns: ({ theme }) => ({
-        testimonial: `${theme("width.8")} ${theme(
-          "width.11"
-        )} minmax(320px, 2fr) minmax(70ch, 3fr) minmax(120px, 1fr) ${theme(
-          "width.2"
-        )}`,
+        testimonial: `${theme(
+          "width.10"
+        )}  minmax(360px, 3fr) 66ch minmax(120px, 1fr) ${theme("width.2")}`,
       }),
-      fontFamily: {
-        sans: ["Poppins", ...defaultTheme.fontFamily.sans],
-      },
     },
   },
   plugins: [],

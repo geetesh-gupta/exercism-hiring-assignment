@@ -2,7 +2,7 @@ import TestimonialsPage from "./pages/TestimonialPage";
 
 function App() {
   return (
-    <div className="text-center flex flex-col items-center">
+    <div className="flex flex-col items-center text-center text-default bg-default">
       <header className="bg-[#282c34] h-20 w-full flex flex-col items-center justify-center text-3xl text-white">
         <a
           className="text-[#61dafb]"

@@ -1,6 +1,6 @@
 import { SortSlugEnum, SortType } from "./../types/testimonials";
 import { TrackType, TrackWithTestimonialCountType } from "../types/tracks";
-import exercismLogo from "../assets/images/exercismLogo.svg";
+import exercismLogo from "../assets/images/exercismHexLogo.svg";
 
 export enum APIRoutes {
   "Tracks" = "https://exercism.org/api/v2/tracks",

@@ -30,21 +30,29 @@ export const TestimonialsListItem: React.FC<TestimonialsApiRespResult> = ({
 }) => {
   return (
     <a
-      className="grid grid-cols-testimonial gap-6 items-center text-left px-6 py-2 bg-white text-gray-700 hover:bg-gray-200 cursor-pointer"
+      className="grid cursor-pointer grid-cols-testimonial items-center gap-4 bg-default p-xl text-left hover:bg-defaultHover"
       href={`/testimonials/${id}`}
     >
       <Logo src={track.icon_url} alt={track.title} />
-      <Logo src={mentor.avatar_url} alt={mentor.handle} />
-      <div className="flex flex-col">
-        <p className="font-bold">{mentor.handle}</p>
-        <p>
-          on {exercise.title} in {track.title}
-        </p>
+      <div className="flex">
+        <div className="ml-2 mr-4">
+          <Logo src={mentor.avatar_url} alt={mentor.handle} rounded />
+        </div>
+        <div className="flex flex-col">
+          <p className="text-lg leading-lg text-labelDefault">
+            {mentor.handle}
+          </p>
+          <p className="text-sm font-normal leading-sm text-labelSecondary">
+            on {exercise.title} in {track.title}
+          </p>
+        </div>
       </div>
-      <p className="text-ellipsis whitespace-nowrap overflow-hidden w-[70ch]">
+      <p className="w-[60ch] overflow-hidden text-ellipsis whitespace-nowrap text-md font-normal leading-xl text-default">
         {content}
       </p>
-      <p className="text-right mr-4">{formatTimeToRelative(created_at)}</p>
+      <p className="mr-4 text-right text-sm leading-xs text-labelSecondary">
+        {formatTimeToRelative(created_at)}
+      </p>
       <Icon src={chevronRight} alt={"Icon to open the testimonial"} />
     </a>
   );

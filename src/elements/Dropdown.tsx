@@ -12,10 +12,16 @@ export const Dropdown: React.FC<{
   listClassName?: string;
 }> = ({ selected, showLogo, children, className = "", listClassName = "" }) =>
   selected ? (
-    <div className={"group inline-block relative " + className}>
-      <button className="bg-white text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center">
+    <div className={"group relative inline-block items-center"}>
+      <button
+        className={
+          `flex items-center justify-between rounded-md text-lg font-normal leading-md text-labelSecondary ${
+            showLogo && selected.icon_url ? "mr-6 " : " bg-input p-lg "
+          }` + className
+        }
+      >
         <>
-          <span className="mr-3">
+          <span className="mr-3.5">
             {showLogo && selected.icon_url ? (
               <Logo src={selected.icon_url} alt={selected.title} />
             ) : (
@@ -38,7 +44,7 @@ export const DropdownList: React.FC<{
   <ul
     role="list"
     className={
-      "group-hover:block absolute hidden text-gray-700 rounded min-w-max bg-white p-2 pointer z-20 drop-shadow-md " +
+      "pointer absolute z-20 hidden rounded-lg bg-default p-2 text-labelSecondary drop-shadow-lg group-hover:block " +
       className
     }
   >
@@ -52,14 +58,19 @@ type DropdownListItemType =
 
 type DropdownListItemProps = {
   onClick: MouseEventHandler<HTMLLIElement>;
+  className?: string;
 };
 
 export const DropdownListItem: React.FC<DropdownListItemProps> = ({
   children,
   onClick,
+  className = "",
 }) => (
   <li
-    className="bg-white hover:bg-gray-200 py-2 px-6 flex whitespace-no-wrap items-center text-left cursor-pointer"
+    className={
+      "whitespace-no-wrap flex cursor-pointer items-center bg-default py-2 px-6 text-left hover:bg-secondaryHover " +
+      className
+    }
     onClick={onClick}
   >
     {children}

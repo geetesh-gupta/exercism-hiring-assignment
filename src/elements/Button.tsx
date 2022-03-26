@@ -9,7 +9,7 @@ const Button: React.FC<ButtonType> = ({
   disabled = false,
 }) => (
   <button
-    className="bg-white py-2 px-4 rounded flex items-center border-2 border-gray-200 hover:bg-gray-100 drop-shadow-md disabled:bg-gray-300 "
+    className="flex items-center rounded border-2 border-button bg-default p-md text-labelSecondary shadow-button disabled:border-0 disabled:bg-disabled disabled:text-labelTertiary"
     onClick={onClick}
     disabled={disabled}
   >

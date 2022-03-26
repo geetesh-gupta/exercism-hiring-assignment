@@ -8,20 +8,21 @@ type SearchProps = {
 };
 
 const Search: React.FC<SearchProps> = ({ value, onChange, placeholder }) => (
-  <label className="relative block ">
+  <div className="relative text-labelSecondary focus-within:text-labelDefault">
     <span className="sr-only">{placeholder}</span>
-    <div className="absolute top-3 left-3 items-center">
+    <span className="absolute inset-y-0 left-0 flex items-center pl-5">
       <Icon src={searchIcon} alt={`${placeholder} icon`} />
-    </div>
+    </span>
     <input
-      className="placeholder:italic placeholder:text-slate-400 block bg-gray-200 hover:bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
-      placeholder={placeholder}
       type="text"
+      name="Filter by Exercise"
+      className="leading-mdtext-labelDefault min-w-max rounded-md bg-input py-3 pl-12 pr-5 text-lg font-normal placeholder:text-labelSecondary focus:border-1 focus:border-inputFocus focus:bg-inputFocus focus:shadow-input focus:outline-none lg:min-w-[360px]"
+      placeholder={placeholder}
       value={value}
       onChange={(e) => onChange(e.target.value)}
-      name="search"
+      autoComplete="off"
     />
-  </label>
+  </div>
 );
 
 export default Search;

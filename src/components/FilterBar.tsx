@@ -21,7 +21,7 @@ const TestimonialsFilterBar: React.FC<TestimonialsFilterBarProps> = ({
   onTracksChange,
 }) => {
   return (
-    <div className="flex text-gray-700 items-center w-full justify-between py-2 px-4">
+    <div className="flex w-full items-center justify-between p-xl">
       <div className="flex items-center">
         <TracksDropdown
           tracks={tracks}
@@ -38,7 +38,7 @@ const TestimonialsFilterBar: React.FC<TestimonialsFilterBarProps> = ({
         selected={{
           title: `Sort by ${getSortTypeBySlug(selectedSortSlug)?.title || ""}`,
         }}
-        className="bg-gray-200 relative"
+        className="bg-default md:min-w-[280px]"
         listClassName="w-full"
       >
         {sortTypeValues.map((sortType) => (
