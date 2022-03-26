@@ -15,15 +15,15 @@ import {
   TracksApiRespType,
   TrackWithTestimonialCountType,
 } from "../types/tracks";
-import { SortType, TestimonialsApiRespType } from "../types/testimonials";
+import { SortSlugEnum, TestimonialsApiRespType } from "../types/testimonials";
 import TestimonialsFilterBar from "./FilterBar";
 import loaderIcon from "../assets/images/loader.svg";
 import Logo from "../elements/Logo";
 
 const TestimonialsContainer: React.FC = () => {
   const [exerciseQuery, setExerciseQuery] = useState("");
-  const [selectedSortType, setSelectedSortType] = useState(
-    SortType.newest_first
+  const [selectedSortSlug, setSelectedSortSlug] = useState(
+    SortSlugEnum.newest_first
   );
   const [activePage, setActivePage] = useState(1);
   const [tracks, setTracks] = useState<{ [key: string]: number }>({
@@ -53,7 +53,7 @@ const TestimonialsContainer: React.FC = () => {
     const fetchData = async () => {
       const queries = {
         track: selectedTrack ? selectedTrack.slug : "",
-        order: selectedSortType,
+        order: selectedSortSlug,
         page: activePage,
         exercise: debouncedExerciseQuery,
       };
@@ -62,7 +62,7 @@ const TestimonialsContainer: React.FC = () => {
     };
 
     fetchData();
-  }, [debouncedExerciseQuery, selectedSortType, selectedTrack, activePage]);
+  }, [debouncedExerciseQuery, selectedSortSlug, selectedTrack, activePage]);
 
   useEffect(() => {
     const trackSlugs = Object.keys(tracks);
@@ -101,8 +101,9 @@ const TestimonialsContainer: React.FC = () => {
     setActivePage(1);
     setExerciseQuery(query);
   };
-  const onSortTypeChange = (sortType: SortType): void => {
-    setSelectedSortType(sortType);
+  const onSortSlugChange = (sortSlug: SortSlugEnum): void => {
+    console.log(sortSlug);
+    setSelectedSortSlug(sortSlug);
   };
   const onTracksChange = (track: TrackWithTestimonialCountType): void => {
     setActivePage(1);
@@ -117,8 +118,8 @@ const TestimonialsContainer: React.FC = () => {
       <TestimonialsFilterBar
         searchQuery={exerciseQuery}
         onSearchQueryChange={onSearchQueryChange}
-        selectedSortType={selectedSortType}
-        onSortTypeChange={onSortTypeChange}
+        selectedSortSlug={selectedSortSlug}
+        onSortSlugChange={onSortSlugChange}
         tracks={tracksDetails}
         selectedTrack={selectedTrack}
         onTracksChange={onTracksChange}

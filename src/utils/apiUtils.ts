@@ -1,3 +1,4 @@
+import { SortSlugEnum, SortType } from "./../types/testimonials";
 import { TrackType, TrackWithTestimonialCountType } from "../types/tracks";
 import exercismLogo from "../assets/images/exercismLogo.svg";
 
@@ -5,6 +6,17 @@ export enum APIRoutes {
   "Tracks" = "https://exercism.org/api/v2/tracks",
   "Testimonials" = "https://exercism.org/api/v2/hiring/testimonials",
 }
+
+export const sortTypeValues: SortType[] = [
+  {
+    slug: SortSlugEnum.newest_first,
+    title: "Most Recent",
+  },
+  {
+    slug: SortSlugEnum.oldest_first,
+    title: "Oldest First",
+  },
+];
 
 export const defaultTrack: TrackWithTestimonialCountType = {
   slug: "all",
@@ -42,4 +54,8 @@ export const findTrackBySlug = (
   trackSlugToFind: string
 ) => {
   return tracks.find((track) => track.slug === trackSlugToFind);
+};
+
+export const getSortTypeBySlug = (slug: SortSlugEnum) => {
+  return sortTypeValues.find((type) => type.slug === slug);
 };

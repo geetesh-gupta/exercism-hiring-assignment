@@ -33,7 +33,12 @@ export type TestimonialsApiRespResult = {
   created_at: string;
 };
 
-export enum SortType {
+export type SortType = {
+  slug: SortSlugEnum;
+  title: string;
+};
+
+export enum SortSlugEnum {
   oldest_first = "oldest_first",
   newest_first = "newest_first",
 }

@@ -1,20 +1,21 @@
 import Search from "../elements/Search";
-import { camelize } from "../utils/stringUtils";
 import TracksDropdown, { TracksDropdownProps } from "./TracksDropdown";
-import { SortType } from "../types/testimonials";
+import { SortSlugEnum } from "../types/testimonials";
+import Dropdown, { DropdownListItem } from "../elements/Dropdown";
+import { getSortTypeBySlug, sortTypeValues } from "../utils/apiUtils";
 
 type TestimonialsFilterBarProps = {
   searchQuery: string;
   onSearchQueryChange: (query: string) => void;
-  selectedSortType: SortType;
-  onSortTypeChange: (sortType: SortType) => void;
+  selectedSortSlug: SortSlugEnum;
+  onSortSlugChange: (sortType: SortSlugEnum) => void;
 } & TracksDropdownProps;
 
 const TestimonialsFilterBar: React.FC<TestimonialsFilterBarProps> = ({
   searchQuery,
   onSearchQueryChange,
-  selectedSortType,
-  onSortTypeChange,
+  selectedSortSlug,
+  onSortSlugChange,
   tracks,
   selectedTrack,
   onTracksChange,
@@ -33,19 +34,22 @@ const TestimonialsFilterBar: React.FC<TestimonialsFilterBarProps> = ({
           placeholder={"Filter by exercise title"}
         />
       </div>
-      <select
-        className=" bg-gray-200 rounded px-4 h-10 w-72 text-sm hover:bg-white border-2"
-        value={selectedSortType}
-        onChange={(e) => {
-          onSortTypeChange(
-            SortType[camelize(e.target.value) as keyof typeof SortType]
-          );
+      <Dropdown
+        selected={{
+          title: `Sort by ${getSortTypeBySlug(selectedSortSlug)?.title || ""}`,
         }}
-        title="Select sorting order"
+        className="bg-gray-200 relative"
+        listClassName="w-full"
       >
-        <option value={SortType.newest_first}>Sort by Most Recent</option>
-        <option value={SortType.oldest_first}>Sort by Oldest First</option>
-      </select>
+        {sortTypeValues.map((sortType) => (
+          <DropdownListItem
+            key={sortType.slug}
+            onClick={() => onSortSlugChange(sortType.slug)}
+          >
+            {sortType.title}
+          </DropdownListItem>
+        ))}
+      </Dropdown>
     </div>
   );
 };
