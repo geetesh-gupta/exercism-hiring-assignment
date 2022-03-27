@@ -1,9 +1,8 @@
 {
   "files": {
     "main.css": "/exercism-hiring-assignment/static/css/main.3ce84aae.css",
-    "main.js": "/exercism-hiring-assignment/static/js/main.2c6547d6.js",
+    "main.js": "/exercism-hiring-assignment/static/js/main.61789246.js",
     "static/js/787.739eeb30.chunk.js": "/exercism-hiring-assignment/static/js/787.739eeb30.chunk.js",
-    "static/media/avatar.svg": "/exercism-hiring-assignment/static/media/avatar.653eaa32924edd4c249bcef3447a5f7f.svg",
     "static/media/badge.svg": "/exercism-hiring-assignment/static/media/badge.5c18195773df10edf3a446357215a1ad.svg",
     "static/media/exercismLogo.svg": "/exercism-hiring-assignment/static/media/exercismLogo.a1ef56ab5867ba8fad9720f9927b1692.svg",
     "static/media/dashboard.svg": "/exercism-hiring-assignment/static/media/dashboard.979797c526ce6cfe27ec6fdd4b1bffb0.svg",
@@ -25,11 +24,11 @@
     "static/media/chevronDown.svg": "/exercism-hiring-assignment/static/media/chevronDown.118308dc2ac754a3b9533b287fb260df.svg",
     "static/media/testimonialsStripe.svg": "/exercism-hiring-assignment/static/media/testimonialsStripe.2209f6c35c89ff3ce7a24e44973d8dc0.svg",
     "main.3ce84aae.css.map": "/exercism-hiring-assignment/static/css/main.3ce84aae.css.map",
-    "main.2c6547d6.js.map": "/exercism-hiring-assignment/static/js/main.2c6547d6.js.map",
+    "main.61789246.js.map": "/exercism-hiring-assignment/static/js/main.61789246.js.map",
     "787.739eeb30.chunk.js.map": "/exercism-hiring-assignment/static/js/787.739eeb30.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3ce84aae.css",
-    "static/js/main.2c6547d6.js"
+    "static/js/main.61789246.js"
   ]
 }
