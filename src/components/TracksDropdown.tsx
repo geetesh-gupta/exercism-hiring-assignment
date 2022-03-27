@@ -33,6 +33,7 @@ const TracksDropdown: React.FC<TracksDropdownProps> = ({
             checked={selectedTrack.slug === track.slug}
             readOnly
             className="mr-6 h-5 w-5"
+            title={track.title}
           ></input>
           <Logo src={track.icon_url} alt={track.title} />
           <p className="mx-4 grow text-lg font-medium leading-md text-secondary ">
