@@ -1,6 +1,5 @@
 import React, { MouseEventHandler, ReactElement } from "react";
-import Logo from "./Logo";
-import Icon from "./Icon";
+import Icon, { IconSizes } from "./Icon";
 import chevronDown from "../assets/images/chevronDown.svg";
 import loaderLogo from "../assets/images/loader.svg";
 
@@ -23,18 +22,22 @@ export const Dropdown: React.FC<{
         <>
           <span className="mr-3.5">
             {showLogo && selected.icon_url ? (
-              <Logo src={selected.icon_url} alt={selected.title} />
+              <Icon src={selected.icon_url} alt={selected.title} />
             ) : (
               <p>{selected.title}</p>
             )}
           </span>
-          <Icon src={chevronDown} alt={"Open dropdown icon"} />
+          <Icon
+            size={IconSizes.sm}
+            src={chevronDown}
+            alt={"Open dropdown icon"}
+          />
         </>
       </button>
       <DropdownList className={listClassName}>{children}</DropdownList>
     </div>
   ) : (
-    <Logo src={loaderLogo} alt="Loading dropdown items" />
+    <Icon src={loaderLogo} alt="Loading dropdown items" />
   );
 
 export const DropdownList: React.FC<{

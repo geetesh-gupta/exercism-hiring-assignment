@@ -1,5 +1,4 @@
-import Icon from "../elements/Icon";
-import Logo from "../elements/Logo";
+import Icon, { IconSizes } from "../elements/Icon";
 import { formatTimeToRelative } from "../utils/dateUtils";
 import chevronRight from "../assets/images/chevronRight.svg";
 import { TestimonialsApiRespResult } from "../types/testimonials";
@@ -33,10 +32,10 @@ export const TestimonialsListItem: React.FC<TestimonialsApiRespResult> = ({
       className="grid cursor-pointer grid-cols-testimonial items-center gap-4 bg-default p-xl text-left hover:bg-defaultHover"
       href={`/testimonials/${id}`}
     >
-      <Logo src={track.icon_url} alt={track.title} />
+      <Icon src={track.icon_url} alt={track.title} />
       <div className="flex">
         <div className="ml-2 mr-4">
-          <Logo src={mentor.avatar_url} alt={mentor.handle} rounded />
+          <Icon src={mentor.avatar_url} alt={mentor.handle} rounded />
         </div>
         <div className="flex flex-col">
           <p className="text-lg leading-lg text-labelDefault">
@@ -53,7 +52,11 @@ export const TestimonialsListItem: React.FC<TestimonialsApiRespResult> = ({
       <p className="mr-4 text-right text-sm leading-xs text-labelSecondary">
         {formatTimeToRelative(created_at)}
       </p>
-      <Icon src={chevronRight} alt={"Icon to open the testimonial"} />
+      <Icon
+        size={IconSizes.sm}
+        src={chevronRight}
+        alt={"Icon to open the testimonial"}
+      />
     </a>
   );
 };

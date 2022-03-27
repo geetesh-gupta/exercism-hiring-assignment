@@ -1,4 +1,4 @@
-import Logo from "../elements/Logo";
+import Icon from "../elements/Icon";
 import { TrackWithTestimonialCountType } from "../types/tracks";
 import Dropdown, { DropdownListItem } from "../elements/Dropdown";
 
@@ -35,7 +35,7 @@ const TracksDropdown: React.FC<TracksDropdownProps> = ({
             className="mr-6 h-5 w-5"
             title={track.title}
           ></input>
-          <Logo src={track.icon_url} alt={track.title} />
+          <Icon src={track.icon_url} alt={track.title} />
           <p className="mx-4 grow text-lg font-medium leading-md text-secondary ">
             {track.title}
           </p>

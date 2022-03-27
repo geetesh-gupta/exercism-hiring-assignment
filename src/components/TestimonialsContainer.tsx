@@ -18,7 +18,7 @@ import {
 import { SortSlugEnum, TestimonialsApiRespType } from "../types/testimonials";
 import TestimonialsFilterBar from "./FilterBar";
 import loaderIcon from "../assets/images/loader.svg";
-import Logo from "../elements/Logo";
+import Icon from "../elements/Icon";
 
 const TestimonialsContainer: React.FC = () => {
   const [exerciseQuery, setExerciseQuery] = useState("");
@@ -134,7 +134,7 @@ const TestimonialsContainer: React.FC = () => {
           <div className="absolute top-0 left-0 flex h-full w-full items-center justify-center">
             <div className="absolute top-0 left-0 h-full w-full bg-default opacity-30" />
             <div className="animate-[spin_4s_infinite_linear]">
-              <Logo src={loaderIcon} alt="Loading icon" />
+              <Icon src={loaderIcon} alt="Loading icon" />
             </div>
           </div>
         ) : (
