@@ -10,7 +10,7 @@ import indicatorLogo from "../assets/images/nav/indicator.svg";
 import notificationsLogo from "../assets/images/nav/notifications.svg";
 import badgeLogo from "../assets/images/nav/badge.svg";
 import navMenuLogo from "../assets/images/nav/navMenu.svg";
-import avatarLogo from "../assets/images/nav/avatar.svg";
+import avatarLogo from "../assets/images/nav/avatar.png";
 import Badge, { BadgeSizes, BadgeWithNum } from "../elements/Badge";
 import BorderGradient from "../elements/BorderGradient";
 import { DropdownList, DropdownListItem } from "../elements/Dropdown";
@@ -123,7 +123,12 @@ const RightNavItems = () => {
       </li>
       <li>
         <a href="/">
-          <Icon src={avatarLogo} alt={"Avatar Logo"} rounded />
+          <Icon
+            size={IconSizes.lg}
+            src={avatarLogo}
+            alt={"Avatar Logo"}
+            rounded
+          />
         </a>
       </li>
     </ul>
