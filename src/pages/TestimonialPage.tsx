@@ -5,7 +5,7 @@ import testimonialsStripe from "../assets/images/testimonialsStripe.svg";
 
 function TestimonialsPage() {
   return (
-    <div className="flex flex-col items-center bg-default text-center text-default">
+    <div className="flex w-full flex-col items-center bg-default text-center text-default">
       <div className="mt-10 flex flex-col items-center gap-3">
         <Icon
           size={IconSizes.lg}

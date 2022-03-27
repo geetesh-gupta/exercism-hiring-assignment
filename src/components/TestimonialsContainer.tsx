@@ -114,7 +114,7 @@ const TestimonialsContainer: React.FC = () => {
   };
 
   return (
-    <div className="m-8 flex max-w-[90rem] flex-col justify-between divide-y-2 rounded-lg bg-default drop-shadow-lg">
+    <div className="m-8 flex w-[calc(100%_-_2rem)] max-w-[90rem] flex-col justify-between divide-y-2 rounded-lg bg-default drop-shadow-lg">
       <TestimonialsFilterBar
         searchQuery={exerciseQuery}
         onSearchQueryChange={onSearchQueryChange}
