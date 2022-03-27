@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Icon, { IconSizes, IconWithBadge } from "../elements/Icon";
 import exercismLogo from "../assets/images/exercismLogo.svg";
 import dashboardLogo from "../assets/images/nav/dashboard.svg";
@@ -14,6 +14,7 @@ import avatarLogo from "../assets/images/nav/avatar.svg";
 import Badge, { BadgeSizes, BadgeWithNum } from "../elements/Badge";
 import BorderGradient from "../elements/BorderGradient";
 import { DropdownList, DropdownListItem } from "../elements/Dropdown";
+import useOnClickOutside from "../hooks/useOnClickOutside";
 
 const basicNavToggleItems = [
   {
@@ -134,7 +135,11 @@ const RightNavItems = () => {
 };
 
 export default function Navbar() {
+  const ref = useRef<HTMLDivElement>(null);
   const [navbarOpen, setNavbarOpen] = useState(false);
+
+  useOnClickOutside(ref, () => setNavbarOpen(false));
+
   return (
     <nav className="relative flex w-full items-center gap-8 bg-default p-md text-lg font-semibold leading-lg text-labelSecondary shadow">
       <a href="/">
@@ -148,7 +153,7 @@ export default function Navbar() {
           <RightNavItems />
         </div>
       </div>
-      <div className={"group relative ml-auto inline-block items-center"}>
+      <div className={"relative ml-auto inline-block items-center"} ref={ref}>
         <button
           className={`flex items-center justify-between rounded-md text-lg font-normal leading-md text-labelSecondary`}
           type="button"
