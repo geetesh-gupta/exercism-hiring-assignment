@@ -8,6 +8,7 @@ module.exports = {
         sans: ["Poppins", ...defaultTheme.fontFamily.sans],
       },
       fontSize: {
+        xs: "13px",
         sm: "14px",
         md: "15px",
         lg: "16px",
@@ -28,8 +29,10 @@ module.exports = {
         default: "#3F3A5A",
         secondary: "#3D3B45",
         link: "#2E57E8",
+        contrast: "#FFFFFF",
       },
       backgroundColor: {
+        labelDefault: "#130B43",
         default: "#FFFFFF",
         defaultHover: "#F4F7FD",
         secondaryHover: "#F0F3F9",
@@ -38,6 +41,7 @@ module.exports = {
         paginationCurrent: "#E1EBFF",
         modal: "rgba(251, 252, 254, 0.7)",
         disabled: "#E0E0ED",
+        alert: "#D85050",
       },
       borderColor: {
         input: "#8480A0",
@@ -56,6 +60,7 @@ module.exports = {
         button: "0px 1px 0px 1px rgba(203, 201, 217, 0.6)",
       },
       padding: {
+        sm: "2px 12px",
         md: "8px 16px",
         lg: "12px 21px",
         xl: "14px 32px",
