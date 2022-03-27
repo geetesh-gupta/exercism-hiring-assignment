@@ -30,51 +30,33 @@ export const TestimonialsListItem: React.FC<TestimonialsApiRespResult> = ({
   return (
     <a
       className={
-        " grid w-full cursor-pointer items-center bg-default p-xl text-left hover:bg-defaultHover " +
-        "grid-cols-[40px_minmax(160px,_2fr)_16ch_minmax(110px,_1fr)_8px] gap-2 " +
-        "md:grid-cols-[40px_minmax(240px,_1fr)_40ch_minmax(110px,_1fr)_8px] " +
-        "gap-4 lg:grid-cols-[40px_minmax(320px,_2fr)_50ch_minmax(120px,_1fr)_8px] " +
-        "xl:grid-cols-[40px_minmax(360px,_3fr)_66ch_minmax(120px,_1fr)_8px] "
+        "grid w-full cursor-pointer items-center bg-default text-left hover:bg-defaultHover  " +
+        "grid-cols-[24px_2fr_3fr_1fr_8px] gap-2 p-md " +
+        "gap-4 md:grid-cols-[40px_2fr_3fr_1fr_8px] md:p-xl "
       }
       href={`/testimonials/${id}`}
     >
       <Icon src={track.icon_url} alt={track.title} />
-      <div className={"flex items-center"}>
-        <div className="ml-2 mr-4 flex-shrink-0">
+      <div className={"flex items-center truncate"}>
+        <div className="ml-1 mr-2 w-8 flex-shrink-0 md:ml-2 md:mr-4 md:w-12">
           <Icon src={mentor.avatar_url} alt={mentor.handle} rounded />
         </div>
-        <div className="flex flex-col">
-          <p className="text-lg leading-lg text-labelDefault">
+        <div className="flex flex-col truncate">
+          <span className="truncate text-lg leading-lg text-labelDefault">
             {mentor.handle}
-          </p>
-          <p
-            className={
-              "overflow-hidden text-ellipsis whitespace-nowrap text-sm font-normal leading-sm text-labelSecondary " +
-              "w-[16ch] " +
-              "md:w-[18ch] " +
-              "lg:w-[24ch] " +
-              "xl:w-[50ch] "
-            }
-          >
+          </span>
+          <span className="truncate text-sm font-normal leading-sm text-labelSecondary ">
             on {exercise.title}{" "}
-            <span className="hidden lg:inline-block"> in {track.title}</span>
-          </p>
+            <span className="hidden truncate lg:inline">in {track.title}</span>
+          </span>
         </div>
       </div>
-      <p
-        className={
-          "overflow-hidden text-ellipsis whitespace-nowrap text-md font-normal leading-xl text-default " +
-          "w-[16ch] " +
-          "md:w-[40ch] " +
-          "lg:w-[50ch] " +
-          "xl:w-[60ch] "
-        }
-      >
+      <span className="overflow-hidden truncate text-ellipsis whitespace-nowrap text-md font-normal leading-xl text-default ">
         {content}
-      </p>
-      <p className="mr-4 text-right text-sm leading-xs text-labelSecondary">
+      </span>
+      <span className="mr-4 shrink-0 whitespace-nowrap text-right text-sm leading-xs text-labelSecondary">
         {formatTimeToRelative(created_at)}
-      </p>
+      </span>
       <Icon
         size={IconSizes.xs}
         src={chevronRight}
