@@ -1,18 +1,10 @@
+import Navbar from "./components/Navbar";
 import TestimonialsPage from "./pages/TestimonialPage";
 
 function App() {
   return (
-    <div className="flex flex-col items-center text-center text-default bg-default">
-      <header className="bg-[#282c34] h-20 w-full flex flex-col items-center justify-center text-3xl text-white">
-        <a
-          className="text-[#61dafb]"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Header TODO
-        </a>
-      </header>
+    <div className="flex w-full flex-col items-center bg-default text-center text-default">
+      <Navbar />
       <TestimonialsPage />
     </div>
   );
