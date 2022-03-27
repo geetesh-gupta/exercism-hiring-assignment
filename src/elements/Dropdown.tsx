@@ -83,7 +83,7 @@ type DropdownListItemType =
   | Array<ReactElement<DropdownListItemProps>>;
 
 type DropdownListItemProps = {
-  onClick: MouseEventHandler<HTMLLIElement>;
+  onClick?: MouseEventHandler<HTMLLIElement>;
   className?: string;
 };
 
