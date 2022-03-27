@@ -20,7 +20,7 @@ const PaginationHandler: React.FC<PaginationHandlerProps> = ({
   numPages,
   onPageChange,
 }) => {
-  const { height, width } = useWindowDimensions();
+  const { width } = useWindowDimensions();
   const pageStep = width < 768 ? 1 : 2;
   const showStart = width < 512 ? false : true;
   return (
