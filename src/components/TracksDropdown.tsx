@@ -20,7 +20,7 @@ const TracksDropdown: React.FC<TracksDropdownProps> = ({
         title: selectedTrack.title,
       }}
       showLogo
-      listClassName="h-96 overflow-y-scroll"
+      listClassName="h-48 md:h-96 overflow-y-scroll"
     >
       {tracks.map((track) => (
         <DropdownListItem
