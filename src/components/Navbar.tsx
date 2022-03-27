@@ -37,42 +37,41 @@ const basicNavToggleItems = [
 
 const leftNavItems = [
   {
-    icon: dashboardLogo,
-    title: "Dashboard",
-    textColor: "text-labelDefault",
-  },
-  {
     icon: tracksLogo,
     title: "Tracks",
-    textColor: "text-labelSecondary",
   },
   {
     icon: mentoringLogo,
     title: "Mentoring",
-    textColor: "text-labelSecondary",
   },
   {
     icon: contributeLogo,
     title: "Contribute",
-    textColor: "text-labelSecondary",
   },
 ];
 
 const LeftNavItems = () => {
   return (
     <ul className="flex flex-row items-center gap-8">
+      <li key={"Dashboard"}>
+        <a href="/" className={"flex items-center gap-4 text-labelDefault"}>
+          <Icon
+            size={IconSizes.md}
+            src={dashboardLogo}
+            alt={`${"Dashboard"} Logo`}
+          />
+          {"Dashboard"}
+        </a>
+      </li>
       {leftNavItems.map((navItem) => (
         <li key={navItem.title}>
-          <a
-            href="/"
-            className={"flex items-center gap-4 " + navItem.textColor}
-          >
+          <a href="/" className={"flex items-center gap-4 text-labelSecondary"}>
             <Icon
               size={IconSizes.sm}
               src={navItem.icon}
               alt={`${navItem.title} Logo`}
             />
-            <p>{navItem.title}</p>
+            {navItem.title}
           </a>
         </li>
       ))}
@@ -100,11 +99,13 @@ const RightNavItems = () => {
       <li>
         <a href="/">
           <BadgeWithNum badgeCount={1}>
-            <Icon
-              size={IconSizes.sm}
-              src={notificationsLogo}
-              alt={"Notifications Logo"}
-            />
+            <div className="rounded-xl bg-notification py-1 px-2 drop-shadow-notification">
+              <Icon
+                size={IconSizes.sm}
+                src={notificationsLogo}
+                alt={"Notifications Logo"}
+              />
+            </div>
           </BadgeWithNum>
         </a>
       </li>
@@ -112,12 +113,7 @@ const RightNavItems = () => {
         <a href="/">
           <Badge size={BadgeSizes.lg}>
             <BorderGradient rounded>
-              <button
-                onClick={function (): void {
-                  throw new Error("Function not implemented.");
-                }}
-                className="border-gradient-to-r flex items-center gap-2 rounded-full bg-labelDefault from-blue-600 to-purple-500 p-sm text-contrast"
-              >
+              <button className="border-gradient-to-r flex items-center gap-2 rounded-full bg-labelDefault from-blue-600 to-purple-500 p-sm text-contrast">
                 <Icon size={IconSizes.sm} src={badgeLogo} alt={"Badge Logo"} />
                 <span className="text-lg font-semibold leading-xl">300K</span>
               </button>
@@ -141,7 +137,7 @@ export default function Navbar() {
   useOnClickOutside(ref, () => setNavbarOpen(false));
 
   return (
-    <nav className="relative flex w-full items-center gap-8 bg-default p-md text-lg font-semibold leading-lg text-labelSecondary shadow">
+    <nav className="relative flex w-full items-center gap-8 bg-default p-xl text-lg font-semibold leading-lg text-labelSecondary shadow">
       <a href="/">
         <img src={exercismLogo} alt={"Exercism Logo"} className="h-8" />
       </a>
@@ -165,28 +161,23 @@ export default function Navbar() {
           <DropdownList className="right-[calc(100%_-_2rem)] min-w-max text-labelSecondary">
             <>
               {basicNavToggleItems.map((navItem) => (
-                <DropdownListItem
-                  key={navItem.title}
-                  onClick={() => {
-                    return;
-                  }}
-                >
+                <DropdownListItem key={navItem.title}>
                   <a href="/" className={"flex items-center gap-4 "}>
-                    <p>{navItem.title}</p>
+                    {navItem.title}
                   </a>
                 </DropdownListItem>
               ))}
               <div className="block xl:hidden">
                 <div className="my-3 h-px w-full bg-gray-100" />
+                <DropdownListItem key={"Dashboard"}>
+                  <a href="/" className={"flex items-center gap-4"}>
+                    Dashboard
+                  </a>
+                </DropdownListItem>
                 {leftNavItems.map((navItem) => (
-                  <DropdownListItem
-                    key={navItem.title}
-                    onClick={() => {
-                      return;
-                    }}
-                  >
+                  <DropdownListItem key={navItem.title}>
                     <a href="/" className={"flex items-center gap-4 "}>
-                      <p>{navItem.title}</p>
+                      {navItem.title}
                     </a>
                   </DropdownListItem>
                 ))}

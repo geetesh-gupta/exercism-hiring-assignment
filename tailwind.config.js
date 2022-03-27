@@ -42,6 +42,7 @@ module.exports = {
         modal: "rgba(251, 252, 254, 0.7)",
         disabled: "#E0E0ED",
         alert: "#D85050",
+        notification: "#FFF4E3",
       },
       borderColor: {
         input: "#8480A0",
@@ -54,6 +55,7 @@ module.exports = {
         sm: "0px 4px 16px rgba(79, 114, 205, 0.1)",
         md: "0px 4px 24px rgba(79, 114, 205, 0.15)",
         lg: "0px 4px 42px rgba(79, 114, 205, 0.15)",
+        notification: "0px 4px 24px rgba(156, 130, 38, 0.4)",
       },
       boxShadow: {
         input: "0px 0px 2px 2px rgba(46, 87, 232, 0.25)",
