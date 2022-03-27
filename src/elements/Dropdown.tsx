@@ -14,7 +14,7 @@ export const Dropdown: React.FC<{
     <div className={"group relative inline-block items-center"}>
       <button
         className={
-          `flex items-center justify-between rounded-md text-lg font-normal leading-md text-labelSecondary ${
+          `flex items-center justify-between rounded-md text-sm font-normal leading-md text-labelSecondary md:text-lg ${
             showLogo && selected.icon_url ? "mr-6 " : " bg-input p-lg "
           }` + className
         }

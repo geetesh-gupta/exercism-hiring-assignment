@@ -16,7 +16,7 @@ const Search: React.FC<SearchProps> = ({ value, onChange, placeholder }) => (
     <input
       type="text"
       name="Filter by Exercise"
-      className="leading-mdtext-labelDefault min-w-max rounded-md bg-input py-3 pl-12 pr-5 text-lg font-normal placeholder:text-labelSecondary focus:border-1 focus:border-inputFocus focus:bg-inputFocus focus:shadow-input focus:outline-none lg:min-w-[360px]"
+      className="min-w-max rounded-md bg-input py-3 pl-12 text-sm font-normal leading-md text-labelDefault placeholder:text-labelSecondary focus:border-1 focus:border-inputFocus focus:bg-inputFocus focus:shadow-input focus:outline-none md:pr-5 md:text-lg lg:min-w-[360px]"
       placeholder={placeholder}
       value={value}
       onChange={(e) => onChange(e.target.value)}
