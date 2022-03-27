@@ -11,7 +11,7 @@ export const Dropdown: React.FC<{
   listClassName?: string;
 }> = ({ selected, showLogo, children, className = "", listClassName = "" }) =>
   selected ? (
-    <div className={"group relative inline-block items-center"}>
+    <div className={"group relative inline-block w-full items-center"}>
       <button
         className={
           `flex items-center justify-between rounded-md text-sm font-normal leading-md text-labelSecondary md:text-lg ${
@@ -20,7 +20,7 @@ export const Dropdown: React.FC<{
         }
       >
         <>
-          <span className="mr-3.5">
+          <span className="mr-1.5 flex-shrink-0 md:mr-3.5">
             {showLogo && selected.icon_url ? (
               <Icon src={selected.icon_url} alt={selected.title} />
             ) : (

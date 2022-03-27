@@ -1,11 +1,11 @@
 import Badge from "./Badge";
 
 export enum IconSizes {
-  xs = "w-4",
-  sm = "w-8",
-  md = "w-12",
-  lg = "w-16",
-  xl = "w-20",
+  xs = "w-3 md:w-4",
+  sm = "w-6 md:w-8",
+  md = "w-8 md:w-12",
+  lg = "w-12 md:w-16",
+  xl = "w-16 md:w-20",
 }
 
 type IconProps = {

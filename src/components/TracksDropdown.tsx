@@ -26,7 +26,7 @@ const TracksDropdown: React.FC<TracksDropdownProps> = ({
         <DropdownListItem
           key={track.slug}
           onClick={() => onTracksChange(track)}
-          className="min-w-[360px]"
+          className="min-w-max md:min-w-[360px]"
         >
           <input
             type="radio"

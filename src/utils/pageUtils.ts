@@ -1,13 +1,14 @@
 export const paginateNumsRange = (
   activePage: number,
   numPages: number,
-  pageStep = 2
+  pageStep = 2,
+  showStart = true
 ): (number | null)[] => {
   // Handle invalid cases
   activePage = floorPaginateRange(activePage, 0);
   activePage = ceilPaginateRange(activePage, numPages, 0);
 
-  let result = [];
+  let result: (number | null)[] = [];
 
   if (numPages - 1 <= 2 * pageStep) {
     return range(1, numPages);
@@ -15,9 +16,11 @@ export const paginateNumsRange = (
 
   // Fill starting values
   if (activePage - 1 > pageStep + 1) {
+    if (showStart) {
+      result = [1, null];
+    }
     result = [
-      1,
-      null,
+      ...result,
       ...range(
         floorPaginateRange(activePage, pageStep),
         ceilPaginateRange(activePage, numPages, pageStep)

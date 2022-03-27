@@ -21,8 +21,8 @@ const TestimonialsFilterBar: React.FC<TestimonialsFilterBarProps> = ({
   onTracksChange,
 }) => {
   return (
-    <div className="flex w-full items-center justify-between p-xl">
-      <div className="flex items-center">
+    <div className="flex w-full flex-col items-center justify-center gap-2 p-md md:w-auto md:flex-row md:justify-between md:p-xl">
+      <div className="flex w-full items-center justify-center md:w-auto">
         <TracksDropdown
           tracks={tracks}
           selectedTrack={selectedTrack}
@@ -34,22 +34,26 @@ const TestimonialsFilterBar: React.FC<TestimonialsFilterBarProps> = ({
           placeholder={"Filter by exercise title"}
         />
       </div>
-      <Dropdown
-        selected={{
-          title: `Sort by ${getSortTypeBySlug(selectedSortSlug)?.title || ""}`,
-        }}
-        className="bg-default md:min-w-[280px]"
-        listClassName="w-full"
-      >
-        {sortTypeValues.map((sortType) => (
-          <DropdownListItem
-            key={sortType.slug}
-            onClick={() => onSortSlugChange(sortType.slug)}
-          >
-            {sortType.title}
-          </DropdownListItem>
-        ))}
-      </Dropdown>
+      <div className="w-full md:ml-auto md:w-auto">
+        <Dropdown
+          selected={{
+            title: `Sort by ${
+              getSortTypeBySlug(selectedSortSlug)?.title || ""
+            }`,
+          }}
+          className="w-full bg-default md:min-w-[280px]"
+          listClassName="w-full"
+        >
+          {sortTypeValues.map((sortType) => (
+            <DropdownListItem
+              key={sortType.slug}
+              onClick={() => onSortSlugChange(sortType.slug)}
+            >
+              {sortType.title}
+            </DropdownListItem>
+          ))}
+        </Dropdown>
+      </div>
     </div>
   );
 };
