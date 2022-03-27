@@ -71,11 +71,6 @@ module.exports = {
       borderWidth: {
         1: "1px",
       },
-      gridTemplateColumns: ({ theme }) => ({
-        testimonial: `${theme(
-          "width.10"
-        )}  minmax(360px, 3fr) 66ch minmax(120px, 1fr) ${theme("width.2")}`,
-      }),
     },
   },
   plugins: [],
