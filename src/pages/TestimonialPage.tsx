@@ -12,7 +12,7 @@ function TestimonialsPage() {
           src={testimonialsLogo}
           alt="Testimonials Logo"
         />
-        <h1 className="text-h1 font-bold leading-h1 text-labelDefault">
+        <h1 className="text-2xl font-bold leading-h1 text-labelDefault sm:text-h1">
           {"Testimonials I've left"}
         </h1>
         <Icon
