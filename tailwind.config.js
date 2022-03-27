@@ -11,6 +11,7 @@ module.exports = {
         sm: "14px",
         md: "15px",
         lg: "16px",
+        h1: "32px",
       },
       lineHeight: {
         xs: "19.5px",
@@ -18,6 +19,7 @@ module.exports = {
         md: "22.5px",
         lg: "24px",
         xl: "25.5px",
+        h1: "43px",
       },
       textColor: {
         labelDefault: "#130B43",
