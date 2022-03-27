@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/exercism-hiring-assignment/static/css/main.3ce84aae.css",
+    "main.js": "/exercism-hiring-assignment/static/js/main.2c6547d6.js",
+    "static/js/787.739eeb30.chunk.js": "/exercism-hiring-assignment/static/js/787.739eeb30.chunk.js",
+    "static/media/avatar.svg": "/exercism-hiring-assignment/static/media/avatar.653eaa32924edd4c249bcef3447a5f7f.svg",
+    "static/media/badge.svg": "/exercism-hiring-assignment/static/media/badge.5c18195773df10edf3a446357215a1ad.svg",
+    "static/media/exercismLogo.svg": "/exercism-hiring-assignment/static/media/exercismLogo.a1ef56ab5867ba8fad9720f9927b1692.svg",
+    "static/media/dashboard.svg": "/exercism-hiring-assignment/static/media/dashboard.979797c526ce6cfe27ec6fdd4b1bffb0.svg",
+    "static/media/exercismHexLogo.svg": "/exercism-hiring-assignment/static/media/exercismHexLogo.20303c3e9fa3280dbafc41eab8f58fbe.svg",
+    "static/media/testimonials.svg": "/exercism-hiring-assignment/static/media/testimonials.32e567f0e6715c87b091b7147fb3ae40.svg",
+    "static/media/mood.svg": "/exercism-hiring-assignment/static/media/mood.4ad313f1dc529a081d7849fcbf390d5a.svg",
+    "static/media/contribute.svg": "/exercism-hiring-assignment/static/media/contribute.a3acbc93d989ba4860b604d89006b1d7.svg",
+    "static/media/loader.svg": "/exercism-hiring-assignment/static/media/loader.a9956c46f73bd2ee92367c8556ae3385.svg",
+    "static/media/navMenu.svg": "/exercism-hiring-assignment/static/media/navMenu.bebe1059401338e6f9a0793776c6269c.svg",
+    "index.html": "/exercism-hiring-assignment/index.html",
+    "static/media/notifications.svg": "/exercism-hiring-assignment/static/media/notifications.b66ac7cf9809a03f683bd73562945ddf.svg",
+    "static/media/indicator.svg": "/exercism-hiring-assignment/static/media/indicator.d636f0f1a0e6ec36b273fe8329c47276.svg",
+    "static/media/mentoring.svg": "/exercism-hiring-assignment/static/media/mentoring.659ae1d60205d7c2fb539a20ea980030.svg",
+    "static/media/tracks.svg": "/exercism-hiring-assignment/static/media/tracks.9f38395bb2f01e64b3083d7dda9dec57.svg",
+    "static/media/search.svg": "/exercism-hiring-assignment/static/media/search.58792cc18c29a962bcbcddae3f36b883.svg",
+    "static/media/arrowLeft.svg": "/exercism-hiring-assignment/static/media/arrowLeft.316edeaba7716034d7fe620848c81b7a.svg",
+    "static/media/arrowRight.svg": "/exercism-hiring-assignment/static/media/arrowRight.09e59761207be622124a4e0f1844f3a2.svg",
+    "static/media/chevronRight.svg": "/exercism-hiring-assignment/static/media/chevronRight.be914525e97ac943e5cf98a788a840b3.svg",
+    "static/media/chevronDown.svg": "/exercism-hiring-assignment/static/media/chevronDown.118308dc2ac754a3b9533b287fb260df.svg",
+    "static/media/testimonialsStripe.svg": "/exercism-hiring-assignment/static/media/testimonialsStripe.2209f6c35c89ff3ce7a24e44973d8dc0.svg",
+    "main.3ce84aae.css.map": "/exercism-hiring-assignment/static/css/main.3ce84aae.css.map",
+    "main.2c6547d6.js.map": "/exercism-hiring-assignment/static/js/main.2c6547d6.js.map",
+    "787.739eeb30.chunk.js.map": "/exercism-hiring-assignment/static/js/787.739eeb30.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3ce84aae.css",
+    "static/js/main.2c6547d6.js"
+  ]
+}
