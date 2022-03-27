@@ -53,7 +53,7 @@ export const TestimonialsListItem: React.FC<TestimonialsApiRespResult> = ({
         {formatTimeToRelative(created_at)}
       </p>
       <Icon
-        size={IconSizes.sm}
+        size={IconSizes.xs}
         src={chevronRight}
         alt={"Icon to open the testimonial"}
       />

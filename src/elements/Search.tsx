@@ -11,7 +11,7 @@ const Search: React.FC<SearchProps> = ({ value, onChange, placeholder }) => (
   <div className="relative text-labelSecondary focus-within:text-labelDefault">
     <span className="sr-only">{placeholder}</span>
     <span className="absolute inset-y-0 left-0 flex items-center pl-5">
-      <Icon size={IconSizes.sm} src={searchIcon} alt={`${placeholder} icon`} />
+      <Icon size={IconSizes.xs} src={searchIcon} alt={`${placeholder} icon`} />
     </span>
     <input
       type="text"

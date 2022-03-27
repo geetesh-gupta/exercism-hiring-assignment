@@ -28,7 +28,7 @@ export const Dropdown: React.FC<{
             )}
           </span>
           <Icon
-            size={IconSizes.sm}
+            size={IconSizes.xs}
             src={chevronDown}
             alt={"Open dropdown icon"}
           />

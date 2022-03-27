@@ -1,5 +1,6 @@
 export enum IconSizes {
-  sm = "w-4",
+  xs = "w-4",
+  sm = "w-8",
   md = "w-12",
   lg = "w-16",
   xl = "w-20",

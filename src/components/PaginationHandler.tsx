@@ -27,7 +27,7 @@ const PaginationHandler: React.FC<PaginationHandlerProps> = ({
         }
         disabled={!numPages || activePage === 1}
       >
-        <Icon size={IconSizes.sm} src={arrowLeft} alt="Previous Page" />
+        <Icon size={IconSizes.xs} src={arrowLeft} alt="Previous Page" />
         <p className="ml-2.5">Previous</p>
       </Button>
       <div className="flex items-center gap-3 text-labelSecondary">
@@ -58,7 +58,7 @@ const PaginationHandler: React.FC<PaginationHandlerProps> = ({
         disabled={!numPages || activePage === numPages}
       >
         <p className="mr-2.5">Next</p>
-        <Icon size={IconSizes.sm} src={arrowRight} alt="Next Page" />
+        <Icon size={IconSizes.xs} src={arrowRight} alt="Next Page" />
       </Button>
     </div>
   );
