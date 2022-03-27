@@ -34,9 +34,7 @@ export const BadgeWithNum: React.FC<{
       <div
         className={`absolute top-[-0.75rem] right-[-0.75rem] rounded-full bg-default`}
       >
-        <div
-          className={`h-6 w-6 rounded-full bg-alert py-0.5 px-2 text-xs text-contrast`}
-        >
+        <div className={`h-6 w-6 rounded-full bg-alert text-xs text-contrast`}>
           {badgeCount ? badgeCount : ""}
         </div>
       </div>
