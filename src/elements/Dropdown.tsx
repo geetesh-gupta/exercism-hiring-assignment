@@ -7,7 +7,6 @@ import React, {
 import Icon, { IconSizes } from "./Icon";
 import chevronDown from "../assets/images/chevronDown.svg";
 import loaderLogo from "../assets/images/loader.svg";
-import useWindowDimensions from "../hooks/useWindowDimensions";
 import useOnClickOutside from "../hooks/useOnClickOutside";
 
 export const Dropdown: React.FC<{
@@ -18,7 +17,6 @@ export const Dropdown: React.FC<{
   listClassName?: string;
 }> = ({ selected, showLogo, children, className = "", listClassName = "" }) => {
   const ref = useRef<HTMLDivElement>(null);
-  const { width } = useWindowDimensions();
   const [dropdownVisible, setDropdownVisible] = useState(false);
 
   useOnClickOutside(ref, () => setDropdownVisible(false));
@@ -41,7 +39,7 @@ export const Dropdown: React.FC<{
             {showLogo && selected.icon_url ? (
               <Icon src={selected.icon_url} alt={selected.title} />
             ) : (
-              <p>{selected.title}</p>
+              selected.title
             )}
           </span>
           <Icon
