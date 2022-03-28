@@ -31,12 +31,12 @@ export const TestimonialsListItem: React.FC<TestimonialsApiRespResult> = ({
     <a
       className={
         "grid w-full cursor-pointer items-center bg-default text-left hover:bg-defaultHover  " +
-        "grid-cols-[40px_2fr_1fr_8px] grid-rows-[2fr_1fr] gap-x-2 p-md " +
+        "grid-cols-[40px_2fr_1fr_8px] grid-rows-[max-content_max-content] gap-2.5 p-lg " +
         "md:grid-cols-[40px_56px_2fr_3fr_1fr_8px] md:grid-rows-1 md:gap-4 md:p-xl"
       }
       href={`/`}
     >
-      <span className="col-span-1 col-start-1 row-start-2 md:col-auto md:row-auto">
+      <span className="col-span-1 col-start-1 row-start-1 md:col-auto md:row-auto">
         <Icon src={track.icon_url} alt={track.title} />
       </span>
       <div className="col-span-1 col-start-1 md:col-auto md:ml-2">
@@ -51,7 +51,7 @@ export const TestimonialsListItem: React.FC<TestimonialsApiRespResult> = ({
           <span className="hidden truncate lg:inline">in {track.title}</span>
         </span>
       </div>
-      <span className="col-span-5 col-start-2 row-start-2 truncate text-md font-normal leading-xl text-default md:col-auto md:row-auto">
+      <span className="col-span-3 col-start-2 row-start-1 truncate text-md font-normal leading-xl text-default md:col-auto md:row-auto">
         {content}
       </span>
       <span className="mr-4 shrink-0 whitespace-nowrap text-right text-sm leading-xs text-labelSecondary md:col-auto md:row-auto">
