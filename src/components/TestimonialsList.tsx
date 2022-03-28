@@ -42,7 +42,7 @@ export const TestimonialsListItem: React.FC<TestimonialsApiRespResult> = ({
       <div className="col-span-1 col-start-1 md:col-auto md:ml-2">
         <Icon src={mentor.avatar_url} alt={mentor.handle} rounded />
       </div>
-      <div className="col-span-1 col-start-2 flex  flex-col truncate md:col-auto md:row-auto">
+      <div className="col-span-1 col-start-2 flex flex-col truncate md:col-auto md:row-auto">
         <span className="truncate text-lg leading-lg text-labelDefault">
           {mentor.handle}
         </span>
@@ -51,7 +51,7 @@ export const TestimonialsListItem: React.FC<TestimonialsApiRespResult> = ({
           <span className="hidden truncate lg:inline">in {track.title}</span>
         </span>
       </div>
-      <span className="col-span-5 col-start-2 row-start-2 overflow-hidden truncate text-ellipsis whitespace-nowrap text-md font-normal leading-xl text-default md:col-auto md:row-auto">
+      <span className="col-span-5 col-start-2 row-start-2 truncate text-md font-normal leading-xl text-default md:col-auto md:row-auto">
         {content}
       </span>
       <span className="mr-4 shrink-0 whitespace-nowrap text-right text-sm leading-xs text-labelSecondary md:col-auto md:row-auto">
