@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  .border-gradient {
+    border-style: solid;
+    border-color: transparent;
+    background-image: linear-gradient(#130b43, #130b43),
+      linear-gradient(#cc00ff, #3300ff);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+}
+
 @layer components {
   .truncate {
     white-space: nowrap;

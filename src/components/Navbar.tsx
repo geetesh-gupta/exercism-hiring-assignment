@@ -12,7 +12,6 @@ import badgeLogo from "../assets/images/nav/badge.svg";
 import navMenuLogo from "../assets/images/nav/navMenu.svg";
 import avatarLogo from "../assets/images/nav/avatar.png";
 import Badge, { BadgeSizes, BadgeWithNum } from "../elements/Badge";
-import BorderGradient from "../elements/BorderGradient";
 import { DropdownList, DropdownListItem } from "../elements/Dropdown";
 import useOnClickOutside from "../hooks/useOnClickOutside";
 
@@ -112,12 +111,12 @@ const RightNavItems = () => {
       <li>
         <a href="/">
           <Badge size={BadgeSizes.lg}>
-            <BorderGradient rounded>
-              <button className="border-gradient-to-r flex items-center gap-2 rounded-full bg-labelDefault from-blue-600 to-purple-500 p-sm text-contrast">
-                <Icon size={IconSizes.sm} src={badgeLogo} alt={"Badge Logo"} />
-                <span className="text-lg font-semibold leading-xl">300K</span>
-              </button>
-            </BorderGradient>
+            {/* <BorderGradient rounded> */}
+            <button className="border-gradient flex items-center gap-2 rounded-full border-4 border-transparent bg-labelDefault p-sm text-contrast">
+              <Icon size={IconSizes.sm} src={badgeLogo} alt={"Badge Logo"} />
+              <span className="text-lg font-semibold leading-xl">300K</span>
+            </button>
+            {/* </BorderGradient> */}
           </Badge>
         </a>
       </li>
