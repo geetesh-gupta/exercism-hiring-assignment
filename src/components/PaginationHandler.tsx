@@ -21,10 +21,9 @@ const PaginationHandler: React.FC<PaginationHandlerProps> = ({
   onPageChange,
 }) => {
   const { width } = useWindowDimensions();
-  const pageStep = width < 768 ? 1 : 2;
-  const showStart = width < 512 ? false : true;
+  const pageStep = width < 768 ? (width < 480 ? 0 : 1) : 2;
   return (
-    <div className="font-sm grid w-full grid-cols-2 grid-rows-2 items-center gap-y-2 bg-default p-xl leading-lg md:flex">
+    <div className="font-sm grid w-full grid-cols-2 grid-rows-2 items-center gap-y-2 bg-default p-lg leading-lg md:flex md:p-xl">
       <span className="row-start-2">
         <Button
           onClick={() =>
@@ -36,26 +35,25 @@ const PaginationHandler: React.FC<PaginationHandlerProps> = ({
           <p className="ml-2.5">Previous</p>
         </Button>
       </span>
-      <div className="col-span-full col-start-1 row-start-1 mx-auto flex items-center gap-3 text-labelSecondary md:row-auto">
-        {paginateNumsRange(activePage, numPages, pageStep, showStart).map(
-          (num, i) =>
-            num ? (
-              <button
-                key={num}
-                onClick={() => onPageChange(activePage, num)}
-                className={`rounded border-1  p-md ${
-                  activePage === num
-                    ? "border-paginationCurrent bg-paginationCurrent text-labelDefault"
-                    : "border-button bg-default "
-                }`}
-              >
-                {num}
-              </button>
-            ) : (
-              <span key={numPages + i + 1} className="mx-3">
-                ...
-              </span>
-            )
+      <div className="col-span-full col-start-1 row-start-1 mx-auto flex items-center gap-1.5 text-labelSecondary md:row-auto md:gap-3">
+        {paginateNumsRange(activePage, numPages, pageStep).map((num, i) =>
+          num ? (
+            <button
+              key={num}
+              onClick={() => onPageChange(activePage, num)}
+              className={`rounded border-1  p-md ${
+                activePage === num
+                  ? "border-paginationCurrent bg-paginationCurrent text-labelDefault"
+                  : "border-button bg-default "
+              }`}
+            >
+              {num}
+            </button>
+          ) : (
+            <span key={numPages + i + 1} className="mx-3">
+              ...
+            </span>
+          )
         )}
       </div>
       <span className="row-start-2 ml-auto md:ml-0">
