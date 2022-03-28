@@ -15,7 +15,15 @@ export const Dropdown: React.FC<{
   children: DropdownListItemType;
   className?: string;
   listClassName?: string;
-}> = ({ selected, showLogo, children, className = "", listClassName = "" }) => {
+  widthFull?: boolean;
+}> = ({
+  selected,
+  showLogo,
+  children,
+  className = "",
+  listClassName = "",
+  widthFull = false,
+}) => {
   const ref = useRef<HTMLDivElement>(null);
   const [dropdownVisible, setDropdownVisible] = useState(false);
 
@@ -23,14 +31,18 @@ export const Dropdown: React.FC<{
 
   return selected ? (
     <div
-      className={"group relative inline-block w-full items-center"}
+      className={
+        "group relative inline-block items-center" +
+        (widthFull ? " w-full " : "")
+      }
       ref={ref}
     >
       <button
         className={
-          `flex items-center justify-between rounded-md text-sm font-normal leading-md text-labelSecondary md:text-lg ${
-            showLogo && selected.icon_url ? "mr-6 " : " bg-input p-lg "
-          }` + className
+          "flex items-center justify-between rounded-md text-sm font-normal leading-md text-labelSecondary md:text-lg" +
+          (showLogo && selected.icon_url ? " mr-6 " : " bg-input p-lg ") +
+          (widthFull ? " w-full " : " ") +
+          className
         }
         onClick={() => setDropdownVisible(!dropdownVisible)}
       >
@@ -51,7 +63,9 @@ export const Dropdown: React.FC<{
       </button>
       {dropdownVisible ? (
         <div onClick={() => setDropdownVisible(false)}>
-          <DropdownList className={listClassName}>{children}</DropdownList>
+          <DropdownList className={listClassName} widthFull={widthFull}>
+            {children}
+          </DropdownList>
         </div>
       ) : (
         <></>
@@ -64,11 +78,13 @@ export const Dropdown: React.FC<{
 export const DropdownList: React.FC<{
   children: DropdownListItemType;
   className?: string;
-}> = ({ children, className = "" }) => (
+  widthFull?: boolean;
+}> = ({ children, className = "", widthFull = false }) => (
   <ul
     role="list"
     className={
       "pointer absolute z-20 rounded-lg bg-default p-2 text-labelSecondary drop-shadow-lg  " +
+      (widthFull ? " w-full " : " ") +
       className
     }
   >

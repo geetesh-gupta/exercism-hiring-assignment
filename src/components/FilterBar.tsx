@@ -21,28 +21,30 @@ const TestimonialsFilterBar: React.FC<TestimonialsFilterBarProps> = ({
   onTracksChange,
 }) => {
   return (
-    <div className="flex w-full flex-col items-center justify-center gap-2 p-md md:w-auto md:flex-row md:justify-between md:p-xl">
-      <div className="flex w-full items-center justify-center md:w-auto">
-        <TracksDropdown
-          tracks={tracks}
-          selectedTrack={selectedTrack}
-          onTracksChange={onTracksChange}
-        />
+    <div className="grid grid-cols-[max-content_1fr] grid-rows-2 items-center gap-y-2.5 p-lg md:grid-cols-[max-content_1fr_1fr] md:grid-rows-1 md:p-xl">
+      {/* <div className="flex w-full items-center justify-center md:w-auto"> */}
+      <TracksDropdown
+        tracks={tracks}
+        selectedTrack={selectedTrack}
+        onTracksChange={onTracksChange}
+      />
+      <div className="col-span-2 row-start-2 w-full md:col-auto md:row-auto md:w-[min-content]">
         <Search
           value={searchQuery}
           onChange={onSearchQueryChange}
           placeholder={"Filter by exercise title"}
+          widthFull
         />
       </div>
-      <div className="w-full md:ml-auto md:w-auto">
+      <div className="ml-auto">
         <Dropdown
           selected={{
             title: `Sort by ${
               getSortTypeBySlug(selectedSortSlug)?.title || ""
             }`,
           }}
-          className="w-full bg-default md:min-w-[280px]"
-          listClassName="w-full"
+          className="bg-default md:min-w-[280px]"
+          widthFull
         >
           {sortTypeValues.map((sortType) => (
             <DropdownListItem
