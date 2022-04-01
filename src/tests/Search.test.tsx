@@ -16,11 +16,13 @@ const Wrapper = () => {
   );
 };
 
-test("renders DropdownListItem element without children", () => {
+test("renders DropdownListItem element without children", async () => {
+  const user = userEvent.setup();
+
   render(<Wrapper />);
   const inputElem = screen.getByRole("textbox");
   expect(inputElem.getAttribute("name")).toBe("Filter by Exercise");
   expect(inputElem.getAttribute("placeholder")).toBe("Placeholder");
-  userEvent.type(inputElem, "TestValue");
   expect(inputElem).toHaveValue("TestValue");
+  await user.type(inputElem, "TestValue");
 });
