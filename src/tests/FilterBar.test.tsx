@@ -46,28 +46,31 @@ describe("renders FilterBar component", () => {
     render(<Wrapper />);
 
     expect(screen.getAllByRole("button").length).toBe(2);
-    expect(screen.getByRole("textbox")).toBeTruthy();
+    expect(screen.queryByRole("textbox")).not.toBeNull();
   });
 
   it("tracks dropdown", async () => {
     render(<Wrapper />);
 
-    let [tracksBtn, sortBtn] = screen.getAllByRole("button");
-    let tracksImg = screen.getByRole("img", { name: "test1" });
+    const [tracksBtn, sortBtn] = screen.getAllByRole("button");
+    let tracksImg: HTMLImageElement = screen.getByRole("img", {
+      name: "test1",
+    });
     const searchInput = screen.getByRole("textbox");
 
-    expect(tracksImg.getAttribute("alt")).toBe("test1");
-    expect(sortBtn).toHaveTextContent("Sort by Most Recent");
+    expect(tracksImg.alt).toEqual("test1");
+    expect(sortBtn.textContent).toEqual("Sort by Most Recent");
     expect(searchInput.textContent).toEqual("");
 
     await user.click(tracksBtn);
+    const dropdownList = screen.getAllByRole("list");
+    expect(dropdownList.length).toBe(1);
     const dropdownElems = screen.getAllByRole("listitem");
     expect(dropdownElems.length).toBe(2);
 
     await user.click(dropdownElems[1]);
     tracksImg = screen.getByRole("img", { name: "test2" });
-    [tracksBtn, sortBtn] = screen.getAllByRole("button");
-    expect(tracksImg.getAttribute("alt")).toBe("test2");
+    expect(tracksImg.alt).toEqual("test2");
   });
 
   it("sort dropdown", async () => {
@@ -91,7 +94,7 @@ describe("renders FilterBar component", () => {
   it("exercise search filter", async () => {
     render(<Wrapper />);
 
-    expect(screen.getByRole("textbox")).toBeTruthy();
+    expect(screen.queryByRole("textbox")).not.toBeNull();
     let searchInput: HTMLInputElement = screen.getByRole("textbox");
     expect(searchInput.placeholder).toEqual("Filter by exercise title");
 

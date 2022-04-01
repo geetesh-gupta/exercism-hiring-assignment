@@ -84,23 +84,23 @@ const Wrapper = () => {
   );
 };
 
-describe("Dropdown integration testing", () => {
+describe("renders Dropdown element", () => {
   const user = userEvent.setup();
 
-  it("renders Dropdown element with selected prop", async () => {
+  it("with selected prop", async () => {
     render(<Wrapper />);
 
     const buttonElem = screen.getByRole("button");
-    expect(buttonElem).toHaveTextContent("Item 1");
+    expect(buttonElem.textContent).toEqual("Item 1");
 
     await user.click(buttonElem);
     const listitems = screen.getAllByRole("listitem");
     expect(screen.queryAllByRole("listitem")).not.toBeNull();
     expect(listitems.length).toBe(3);
-    expect(listitems[0]).toHaveTextContent("Item 1");
+    expect(listitems[0].textContent).toEqual("Item 1");
 
     await user.click(listitems[1]);
     expect(screen.queryByRole("listitem")).toBeNull();
-    expect(buttonElem).toHaveTextContent("Item 2");
+    expect(buttonElem.textContent).toEqual("Item 2");
   });
 });
