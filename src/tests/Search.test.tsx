@@ -20,9 +20,9 @@ test("renders DropdownListItem element without children", async () => {
   const user = userEvent.setup();
 
   render(<Wrapper />);
-  const inputElem = screen.getByRole("textbox");
-  expect(inputElem.getAttribute("name")).toBe("Filter by Exercise");
-  expect(inputElem.getAttribute("placeholder")).toBe("Placeholder");
-  expect(inputElem).toHaveValue("TestValue");
+  const inputElem: HTMLInputElement = screen.getByRole("textbox");
+  expect(inputElem.name).toEqual("Filter by Exercise");
+  expect(inputElem.placeholder).toEqual("Placeholder");
   await user.type(inputElem, "TestValue");
+  expect(inputElem.value).toEqual("TestValue");
 });
