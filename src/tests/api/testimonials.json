@@ -1,0 +1,935 @@
+{
+  "testimonials": [
+    {
+      "id": 22734,
+      "track": {
+        "slug": "cpp",
+        "title": "C++",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/cpp.svg"
+      },
+      "exercise": {
+        "slug": "leap",
+        "title": "Leap",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/leap.svg"
+      },
+      "mentor": {
+        "handle": "learningstud",
+        "avatar_url": "https://avatars.githubusercontent.com/u/20207784?v=4"
+      },
+      "content": "Thank you!",
+      "created_at": "2022-01-22T13:07:40.280Z"
+    },
+    {
+      "id": 22741,
+      "track": {
+        "slug": "cpp",
+        "title": "C++",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/cpp.svg"
+      },
+      "exercise": {
+        "slug": "series",
+        "title": "Series",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/series.svg"
+      },
+      "mentor": {
+        "handle": "BaquarAbbas",
+        "avatar_url": "https://avatars.githubusercontent.com/u/70859858?v=4"
+      },
+      "content": "Good work mate..Hope that you would be my mentor in guiding through other exercises\nof other tracks including this one.",
+      "created_at": "2021-11-23T18:15:03.248Z"
+    },
+    {
+      "id": 22747,
+      "track": {
+        "slug": "cpp",
+        "title": "C++",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/cpp.svg"
+      },
+      "exercise": {
+        "slug": "triangle",
+        "title": "Triangle",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/triangle.svg"
+      },
+      "mentor": {
+        "handle": "kbexercise",
+        "avatar_url": "https://dg8krxphbh767.cloudfront.net/placeholders/user-avatar.svg"
+      },
+      "content": "Straight-to-the-point and really helped me make my code look much neater than it did before! The perfect mentor!",
+      "created_at": "2021-12-23T00:45:47.644Z"
+    },
+    {
+      "id": 22826,
+      "track": {
+        "slug": "cpp",
+        "title": "C++",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/cpp.svg"
+      },
+      "exercise": {
+        "slug": "two-fer",
+        "title": "Two Fer",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/two-fer.svg"
+      },
+      "mentor": {
+        "handle": "Alex-don",
+        "avatar_url": "https://exercism.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbVo2IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9f627f0e59ab1d114c262fce01d7ee359070e79f/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQWNocEFjZz0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--e51c85b8d2c9669c631b964f2f35132e4e43e95f/avatar.jpg"
+      },
+      "content": "Thanks for the mentorship!",
+      "created_at": "2021-10-27T06:31:09.410Z"
+    },
+    {
+      "id": 22832,
+      "track": {
+        "slug": "cpp",
+        "title": "C++",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/cpp.svg"
+      },
+      "exercise": {
+        "slug": "leap",
+        "title": "Leap",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/leap.svg"
+      },
+      "mentor": {
+        "handle": "CharlesBirer",
+        "avatar_url": "https://dg8krxphbh767.cloudfront.net/placeholders/user-avatar.svg"
+      },
+      "content": "great tips. very friendly discussion.",
+      "created_at": "2021-09-27T11:38:43.943Z"
+    },
+    {
+      "id": 22910,
+      "track": {
+        "slug": "cpp",
+        "title": "C++",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/cpp.svg"
+      },
+      "exercise": {
+        "slug": "difference-of-squares",
+        "title": "Difference Of Squares",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/difference-of-squares.svg"
+      },
+      "mentor": {
+        "handle": "Manoloon",
+        "avatar_url": "https://exercism.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcVp2IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5e74bf8b21f044059dedd4d54bb35fdb0aab13cb/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQWNocEFjZz0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--e51c85b8d2c9669c631b964f2f35132e4e43e95f/avatar.jpg"
+      },
+      "content": "A great mentor! fast response , straight forward answers. A very kind person.",
+      "created_at": "2021-08-31T17:16:07.496Z"
+    },
+    {
+      "id": 23118,
+      "track": {
+        "slug": "cpp",
+        "title": "C++",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/cpp.svg"
+      },
+      "exercise": {
+        "slug": "pangram",
+        "title": "Pangram",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/pangram.svg"
+      },
+      "mentor": {
+        "handle": "Reijnhoudt",
+        "avatar_url": "https://dg8krxphbh767.cloudfront.net/placeholders/user-avatar.svg"
+      },
+      "content": "Thank you! Every time I get mentored by you, it feels like I am learning a new concept.",
+      "created_at": "2021-07-09T12:19:35.846Z"
+    },
+    {
+      "id": 23137,
+      "track": {
+        "slug": "cpp",
+        "title": "C++",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/cpp.svg"
+      },
+      "exercise": {
+        "slug": "space-age",
+        "title": "Space Age",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/space-age.svg"
+      },
+      "mentor": {
+        "handle": "patryko1223",
+        "avatar_url": "https://dg8krxphbh767.cloudfront.net/placeholders/user-avatar.svg"
+      },
+      "content": "Mentor is very helpful ! Thank you for your time I appreciate it !",
+      "created_at": "2021-06-09T18:47:43.725Z"
+    },
+    {
+      "id": 23147,
+      "track": {
+        "slug": "cpp",
+        "title": "C++",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/cpp.svg"
+      },
+      "exercise": {
+        "slug": "reverse-string",
+        "title": "Reverse String",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/reverse-string.svg"
+      },
+      "mentor": {
+        "handle": "ExercismGhost",
+        "avatar_url": "https://dg8krxphbh767.cloudfront.net/placeholders/user-avatar.svg"
+      },
+      "content": "Learnt something new about strings in C++. Now that isn't possible when you're checking out examples on blogs.",
+      "created_at": "2021-05-10T04:49:42.379Z"
+    },
+    {
+      "id": 18625,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "two-fer",
+        "title": "Two Fer",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/two-fer.svg"
+      },
+      "mentor": {
+        "handle": "nurujjamanpollob",
+        "avatar_url": "https://exercism.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdXBTIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--b51b55b5b8a2c76961134237be5a24033043060d/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQWNocEFjZz0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--d5122aa11e6fd9c0f2d22828f6725dadad53ddb4/FB_IMG_15815653407484863.jpg"
+      },
+      "content": "He is a really good mentor. He helped me with the DRY principle in coding, which I don't know earlier.",
+      "created_at": "2021-08-22T11:59:20.000Z"
+    },
+    {
+      "id": 18634,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "gigasecond",
+        "title": "Gigasecond",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/gigasecond.svg"
+      },
+      "mentor": {
+        "handle": "tomitasan",
+        "avatar_url": "https://dg8krxphbh767.cloudfront.net/placeholders/user-avatar.svg"
+      },
+      "content": "Great tips!",
+      "created_at": "2021-07-06T14:25:23.000Z"
+    },
+    {
+      "id": 18847,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "two-fer",
+        "title": "Two Fer",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/two-fer.svg"
+      },
+      "mentor": {
+        "handle": "tamlthari",
+        "avatar_url": "https://avatars.githubusercontent.com/u/53290245?v=4"
+      },
+      "content": "Clear and straight-forward insights. Danke!",
+      "created_at": "2021-07-18T12:27:48.000Z"
+    },
+    {
+      "id": 18927,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "scrabble-score",
+        "title": "Scrabble Score",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/scrabble-score.svg"
+      },
+      "mentor": {
+        "handle": "ryanboldi",
+        "avatar_url": "https://avatars.githubusercontent.com/u/22167119?v=4"
+      },
+      "content": "Always gives valuable feedback and provides options for the student to push themselves.",
+      "created_at": "2021-07-24T11:22:39.000Z"
+    },
+    {
+      "id": 19005,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "two-fer",
+        "title": "Two Fer",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/two-fer.svg"
+      },
+      "mentor": {
+        "handle": "Rozakred",
+        "avatar_url": "https://dg8krxphbh767.cloudfront.net/placeholders/user-avatar.svg"
+      },
+      "content": "Great feedback and quick answer",
+      "created_at": "2021-07-27T20:42:33.000Z"
+    },
+    {
+      "id": 19055,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "difference-of-squares",
+        "title": "Difference Of Squares",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/difference-of-squares.svg"
+      },
+      "mentor": {
+        "handle": "pldupont",
+        "avatar_url": "https://avatars0.githubusercontent.com/u/10406441"
+      },
+      "content": "Great feedback, always providing alternative approaches. Thank you.",
+      "created_at": "2021-07-29T20:22:13.000Z"
+    },
+    {
+      "id": 19056,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "difference-of-squares",
+        "title": "Difference Of Squares",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/difference-of-squares.svg"
+      },
+      "mentor": {
+        "handle": "netzwerch",
+        "avatar_url": "https://avatars2.githubusercontent.com/u/1560717?v=4"
+      },
+      "content": "Kind and helpful",
+      "created_at": "2021-08-05T08:54:38.000Z"
+    },
+    {
+      "id": 19061,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "two-fer",
+        "title": "Two Fer",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/two-fer.svg"
+      },
+      "mentor": {
+        "handle": "suchov",
+        "avatar_url": "https://avatars3.githubusercontent.com/u/1478985?v=4"
+      },
+      "content": "Great and deep explanation with the links to the resources. Kudos to Bob!",
+      "created_at": "2021-07-30T10:48:51.000Z"
+    },
+    {
+      "id": 20112,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "hamming",
+        "title": "Hamming",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/hamming.svg"
+      },
+      "mentor": {
+        "handle": "Doofenshmirtz7",
+        "avatar_url": "https://dg8krxphbh767.cloudfront.net/placeholders/user-avatar.svg"
+      },
+      "content": "The external links provided by him were quite informative. Got to learn more from there.",
+      "created_at": "2021-09-13T16:42:58.571Z"
+    },
+    {
+      "id": 20151,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "gigasecond",
+        "title": "Gigasecond",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/gigasecond.svg"
+      },
+      "mentor": {
+        "handle": "robert-sjoblom",
+        "avatar_url": "https://avatars2.githubusercontent.com/u/31652489?v=4"
+      },
+      "content": "Well-structured feedback with real value!",
+      "created_at": "2021-09-14T17:22:01.247Z"
+    },
+    {
+      "id": 20276,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "word-count",
+        "title": "Word Count",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/word-count.svg"
+      },
+      "mentor": {
+        "handle": "Zimovit",
+        "avatar_url": "https://exercism.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaU5vIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c180630be7d223d0f9342d7fd7fb5046cea6efa7/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQWNocEFjZz0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--e51c85b8d2c9669c631b964f2f35132e4e43e95f/avatar.jpg"
+      },
+      "content": "I am grateful for your mentoring, you've helped me improve my knowledge and showed me some new opportunities.",
+      "created_at": "2021-09-18T16:09:06.027Z"
+    },
+    {
+      "id": 20527,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "cars-assemble",
+        "title": "Cars, Assemble!",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/cars-assemble.svg"
+      },
+      "mentor": {
+        "handle": "JacobR",
+        "avatar_url": "https://avatars2.githubusercontent.com/u/25756509"
+      },
+      "content": "Bob quickly pointed out what was good about my code, and what could be improved. This is the kind of mentoring I would like to see in the future. Thanks again!",
+      "created_at": "2021-09-29T15:16:42.232Z"
+    },
+    {
+      "id": 20740,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "grains",
+        "title": "Grains",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/grains.svg"
+      },
+      "mentor": {
+        "handle": "epaolinos",
+        "avatar_url": "https://avatars1.githubusercontent.com/u/48056155?v=4"
+      },
+      "content": "Thanks a lot for your help!",
+      "created_at": "2021-10-09T19:41:40.135Z"
+    },
+    {
+      "id": 20757,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "pig-latin",
+        "title": "Pig Latin",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/pig-latin.svg"
+      },
+      "mentor": {
+        "handle": "elewis084",
+        "avatar_url": "https://exercism.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa1l3IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a382e491deea832e3cf0f0d6df095cc69a37c992/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lKYW5CbFp3WTZCa1ZVT2hOeVpYTnBlbVZmZEc5ZlptbHNiRnNIYVFISWFRSEkiLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--1d867afcbea9f5d95a0128ca72e82ad0c39f5e93/F17C3639-6422-4BCC-B173-6B5C9C364790_1_201_a.jpeg"
+      },
+      "content": "Good suggestions, and I really appreciate the detail on each suggestion along with the recommended resources.  ",
+      "created_at": "2021-10-10T16:38:04.016Z"
+    },
+    {
+      "id": 20866,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "two-fer",
+        "title": "Two Fer",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/two-fer.svg"
+      },
+      "mentor": {
+        "handle": "picosphere",
+        "avatar_url": "https://avatars1.githubusercontent.com/u/5556169?v=4"
+      },
+      "content": "Thanks a lot for looking up the Java version and beyond that for all your comments on my code! :)",
+      "created_at": "2021-10-15T19:59:17.484Z"
+    },
+    {
+      "id": 20927,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "scrabble-score",
+        "title": "Scrabble Score",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/scrabble-score.svg"
+      },
+      "mentor": {
+        "handle": "JacobR",
+        "avatar_url": "https://avatars2.githubusercontent.com/u/25756509"
+      },
+      "content": "Thanks to Bob's advice I was able to simplify the code and also utilize a more Java specific approach to the problem. I'm really grateful - GOOD WORK! :)",
+      "created_at": "2021-10-18T13:37:03.163Z"
+    },
+    {
+      "id": 21036,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "robot-name",
+        "title": "Robot Name",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/robot-name.svg"
+      },
+      "mentor": {
+        "handle": "azenkwed",
+        "avatar_url": "https://avatars0.githubusercontent.com/u/7474117?v=4"
+      },
+      "content": "The best mentor for the Java track. ",
+      "created_at": "2021-10-24T12:40:16.296Z"
+    },
+    {
+      "id": 21043,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "scrabble-score",
+        "title": "Scrabble Score",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/scrabble-score.svg"
+      },
+      "mentor": {
+        "handle": "Swathibhat01",
+        "avatar_url": "https://avatars.githubusercontent.com/u/10736205?v=4"
+      },
+      "content": "Bobahop is a great mentor. Helped me write more readable and cleaner code. \nI got to understand some important concepts about Constructors too. ",
+      "created_at": "2021-10-24T19:21:53.583Z"
+    },
+    {
+      "id": 21236,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "protein-translation",
+        "title": "Protein Translation",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/protein-translation.svg"
+      },
+      "mentor": {
+        "handle": "rabestro",
+        "avatar_url": "https://avatars0.githubusercontent.com/u/52966251?v=4"
+      },
+      "content": "I got a valuable review and a good idea which I implemented in my solution. Thank you!",
+      "created_at": "2021-11-02T18:19:47.803Z"
+    },
+    {
+      "id": 21349,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "triangle",
+        "title": "Triangle",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/triangle.svg"
+      },
+      "mentor": {
+        "handle": "Chefioli1969",
+        "avatar_url": "https://dg8krxphbh767.cloudfront.net/placeholders/user-avatar.svg"
+      },
+      "content": "Really helpful, bobahop took the time to explain what I was doing wrong and even provided me with alternative/neater ways to organize my code! Thank you!",
+      "created_at": "2021-11-06T18:47:59.999Z"
+    },
+    {
+      "id": 21629,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "isbn-verifier",
+        "title": "Isbn Verifier",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/isbn-verifier.svg"
+      },
+      "mentor": {
+        "handle": "JSPee",
+        "avatar_url": "https://dg8krxphbh767.cloudfront.net/placeholders/user-avatar.svg"
+      },
+      "content": "Clear and very useful feedback. Thank you!",
+      "created_at": "2021-11-17T16:49:19.734Z"
+    },
+    {
+      "id": 22017,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "lasagna",
+        "title": "Cook your lasagna",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/lasagna.svg"
+      },
+      "mentor": {
+        "handle": "ducknowledges",
+        "avatar_url": "https://exercism.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdTFyIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--db253cde346c582e24e73627c83744b51695a04a/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQWNocEFjZz0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--e51c85b8d2c9669c631b964f2f35132e4e43e95f/avatar.jpg"
+      },
+      "content": "All questions are closed. Discussion was very helpful and clear=) Very nice mentor!",
+      "created_at": "2021-12-10T21:21:49.955Z"
+    },
+    {
+      "id": 22042,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "annalyns-infiltration",
+        "title": "Annalyn's Infiltration",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/annalyns-infiltration.svg"
+      },
+      "mentor": {
+        "handle": "ducknowledges",
+        "avatar_url": "https://exercism.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdTFyIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--db253cde346c582e24e73627c83744b51695a04a/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQWNocEFjZz0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--e51c85b8d2c9669c631b964f2f35132e4e43e95f/avatar.jpg"
+      },
+      "content": "Thanks! Good mentor. Сlear and concise explanation of best practices.",
+      "created_at": "2021-12-12T19:59:20.889Z"
+    },
+    {
+      "id": 22056,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "luhn",
+        "title": "Luhn",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/luhn.svg"
+      },
+      "mentor": {
+        "handle": "JSPee",
+        "avatar_url": "https://dg8krxphbh767.cloudfront.net/placeholders/user-avatar.svg"
+      },
+      "content": "Always happy to seen a bobahop review!",
+      "created_at": "2021-12-13T18:46:22.693Z"
+    },
+    {
+      "id": 22133,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "scrabble-score",
+        "title": "Scrabble Score",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/scrabble-score.svg"
+      },
+      "mentor": {
+        "handle": "IvanGoralka",
+        "avatar_url": "https://dg8krxphbh767.cloudfront.net/placeholders/user-avatar.svg"
+      },
+      "content": "I have got from my mentor great hints to implement in my code. It is great boost to motivation to know, somebody is thinking about your code. Thanks!",
+      "created_at": "2021-12-17T13:52:13.914Z"
+    },
+    {
+      "id": 22286,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "robot-name",
+        "title": "Robot Name",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/robot-name.svg"
+      },
+      "mentor": {
+        "handle": "Tailong",
+        "avatar_url": "https://exercism.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb1Z2IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c2aa6990808d5b13f28849f37d3cc2e903c629a5/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQWNocEFjZz0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--e51c85b8d2c9669c631b964f2f35132e4e43e95f/avatar.jpg"
+      },
+      "content": "Thanks for your advice ! ",
+      "created_at": "2021-12-27T09:14:07.260Z"
+    },
+    {
+      "id": 22296,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "annalyns-infiltration",
+        "title": "Annalyn's Infiltration",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/annalyns-infiltration.svg"
+      },
+      "mentor": {
+        "handle": "brk-klymn",
+        "avatar_url": "https://exercism.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBckZ4IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1d6b14c9d4374076ca4207aba21e95dc704bce1/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQWNocEFjZz0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--e51c85b8d2c9669c631b964f2f35132e4e43e95f/avatar.jpg"
+      },
+      "content": "Very informative and pleasant expirience.\nAnd it is important to add that it is taking as granted that he helps others on his free time\nand with such quality !",
+      "created_at": "2021-12-27T21:32:06.073Z"
+    },
+    {
+      "id": 22407,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "acronym",
+        "title": "Acronym",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/acronym.svg"
+      },
+      "mentor": {
+        "handle": "voxEko",
+        "avatar_url": "https://avatars.githubusercontent.com/u/88464723?v=4"
+      },
+      "content": "I can't imagine more complete and insightful guidance.  THANKS!!",
+      "created_at": "2022-01-04T19:27:10.931Z"
+    },
+    {
+      "id": 22437,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "annalyns-infiltration",
+        "title": "Annalyn's Infiltration",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/annalyns-infiltration.svg"
+      },
+      "mentor": {
+        "handle": "charmbracelets",
+        "avatar_url": "https://exercism.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBazgyIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--b68392c40beb6d414345e95f2e1838e15958292a/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQWNocEFjZz0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--e51c85b8d2c9669c631b964f2f35132e4e43e95f/Afua.png"
+      },
+      "content": "Thank you for your assistance. You gave me insight to explore ternary operators. ",
+      "created_at": "2022-01-06T14:05:11.102Z"
+    },
+    {
+      "id": 22465,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "matching-brackets",
+        "title": "Matching Brackets",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/matching-brackets.svg"
+      },
+      "mentor": {
+        "handle": "voxEko",
+        "avatar_url": "https://avatars.githubusercontent.com/u/88464723?v=4"
+      },
+      "content": "Bobahop is able to explain and demonstrate difficult concepts like no other teacher I've known.  THANK YOU!! ",
+      "created_at": "2022-01-07T21:33:05.802Z"
+    },
+    {
+      "id": 22542,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "hamming",
+        "title": "Hamming",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/hamming.svg"
+      },
+      "mentor": {
+        "handle": "voxEko",
+        "avatar_url": "https://avatars.githubusercontent.com/u/88464723?v=4"
+      },
+      "content": "It 's rare to find such superb guidance!",
+      "created_at": "2022-01-11T19:06:19.141Z"
+    },
+    {
+      "id": 22560,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "difference-of-squares",
+        "title": "Difference Of Squares",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/difference-of-squares.svg"
+      },
+      "mentor": {
+        "handle": "shasha",
+        "avatar_url": "https://dg8krxphbh767.cloudfront.net/placeholders/user-avatar.svg"
+      },
+      "content": "Thanks for the help again!",
+      "created_at": "2022-01-12T19:09:46.103Z"
+    },
+    {
+      "id": 22565,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "robot-name",
+        "title": "Robot Name",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/robot-name.svg"
+      },
+      "mentor": {
+        "handle": "tmastring",
+        "avatar_url": "https://avatars.githubusercontent.com/u/74499203?v=4"
+      },
+      "content": "One of the Best!!!",
+      "created_at": "2022-01-12T23:34:54.043Z"
+    },
+    {
+      "id": 22578,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "annalyns-infiltration",
+        "title": "Annalyn's Infiltration",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/annalyns-infiltration.svg"
+      },
+      "mentor": {
+        "handle": "ludoviko",
+        "avatar_url": "https://avatars2.githubusercontent.com/u/4397487"
+      },
+      "content": "A really helpful mentor, always provides great insights, nice listening to his suggestions, a learning experience sharing with Bobahop.",
+      "created_at": "2022-01-13T13:42:17.544Z"
+    },
+    {
+      "id": 22614,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "lasagna",
+        "title": "Cook your lasagna",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/lasagna.svg"
+      },
+      "mentor": {
+        "handle": "jasonwee",
+        "avatar_url": "https://avatars0.githubusercontent.com/u/3326279?v=4"
+      },
+      "content": "super!",
+      "created_at": "2022-01-15T07:51:03.092Z"
+    },
+    {
+      "id": 22699,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "nucleotide-count",
+        "title": "Nucleotide Count",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/nucleotide-count.svg"
+      },
+      "mentor": {
+        "handle": "tmastring",
+        "avatar_url": "https://avatars.githubusercontent.com/u/74499203?v=4"
+      },
+      "content": "The best!!!!",
+      "created_at": "2022-01-19T22:51:56.789Z"
+    },
+    {
+      "id": 22706,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "protein-translation",
+        "title": "Protein Translation",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/protein-translation.svg"
+      },
+      "mentor": {
+        "handle": "mark282",
+        "avatar_url": "https://dg8krxphbh767.cloudfront.net/placeholders/user-avatar.svg"
+      },
+      "content": "With one lesson i`ve learnt two new things. It was very helpful. Thank you.",
+      "created_at": "2022-01-20T12:15:28.104Z"
+    },
+    {
+      "id": 22726,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "gigasecond",
+        "title": "Gigasecond",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/gigasecond.svg"
+      },
+      "mentor": {
+        "handle": "malthaher",
+        "avatar_url": "https://dg8krxphbh767.cloudfront.net/placeholders/user-avatar.svg"
+      },
+      "content": "Thanks dear for your valuable comment.",
+      "created_at": "2022-01-21T17:34:54.549Z"
+    },
+    {
+      "id": 22755,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "pangram",
+        "title": "Pangram",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/pangram.svg"
+      },
+      "mentor": {
+        "handle": "voxEko",
+        "avatar_url": "https://avatars.githubusercontent.com/u/88464723?v=4"
+      },
+      "content": "Bobahop's mentorship has increased my familiarity of the syntactical tools available to me in ways I never could have imagined.",
+      "created_at": "2022-01-23T16:28:40.993Z"
+    },
+    {
+      "id": 22798,
+      "track": {
+        "slug": "java",
+        "title": "Java",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg"
+      },
+      "exercise": {
+        "slug": "lasagna",
+        "title": "Cook your lasagna",
+        "icon_url": "https://dg8krxphbh767.cloudfront.net/exercises/lasagna.svg"
+      },
+      "mentor": {
+        "handle": "VenomViper",
+        "avatar_url": "https://dg8krxphbh767.cloudfront.net/placeholders/user-avatar.svg"
+      },
+      "content": "Very knowledgeable, helped me with my issue.",
+      "created_at": "2022-01-25T22:23:08.089Z"
+    }
+  ]
+}

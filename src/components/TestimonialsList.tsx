@@ -11,7 +11,10 @@ export const TestimonialsList: React.FC<TestimonialsListProps> = ({
   listItems,
 }) => {
   return (
-    <div className="min-h-[640px] w-full divide-y">
+    <div
+      className="min-h-[640px] w-full divide-y"
+      data-testid="testimonial-list"
+    >
       {listItems.map((listItem) => (
         <TestimonialsListItem key={listItem.id} {...listItem} />
       ))}
@@ -51,10 +54,16 @@ export const TestimonialsListItem: React.FC<TestimonialsApiRespResult> = ({
           <span className="hidden truncate lg:inline">in {track.title}</span>
         </span>
       </div>
-      <span className="col-span-3 col-start-2 row-start-1 truncate text-md font-normal leading-xl text-default md:col-auto md:row-auto">
+      <span
+        className="col-span-3 col-start-2 row-start-1 truncate text-md font-normal leading-xl text-default md:col-auto md:row-auto"
+        data-testid="content"
+      >
         {content}
       </span>
-      <span className="mr-4 shrink-0 whitespace-nowrap text-right text-sm leading-xs text-labelSecondary md:col-auto md:row-auto">
+      <span
+        className="mr-4 shrink-0 whitespace-nowrap text-right text-sm leading-xs text-labelSecondary md:col-auto md:row-auto"
+        data-testid="created_at"
+      >
         {formatTimeToRelative(created_at)}
       </span>
       <Icon

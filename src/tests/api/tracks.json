@@ -1,0 +1,48 @@
+{
+  "tracks": [
+    {
+      "slug": "cpp",
+      "title": "C++",
+      "course": false,
+      "num_concepts": 0,
+      "num_exercises": 55,
+      "web_url": "https://exercism.org/tracks/cpp",
+      "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/cpp.svg",
+      "tags": ["Object-oriented", "Static"],
+      "last_touched_at": "2019-10-29T13:14:37Z",
+      "is_new": false,
+      "links": {
+        "self": "https://exercism.org/tracks/cpp",
+        "exercises": "https://exercism.org/tracks/cpp/exercises",
+        "concepts": "https://exercism.org/tracks/cpp/concepts"
+      },
+      "is_joined": true,
+      "num_learnt_concepts": 0,
+      "num_completed_exercises": 0,
+      "num_solutions": 2,
+      "has_notifications": false
+    },
+    {
+      "slug": "java",
+      "title": "Java",
+      "course": true,
+      "num_concepts": 17,
+      "num_exercises": 129,
+      "web_url": "https://exercism.org/tracks/java",
+      "icon_url": "https://dg8krxphbh767.cloudfront.net/tracks/java.svg",
+      "tags": ["Functional", "Games"],
+      "last_touched_at": "2022-03-21T04:36:49Z",
+      "is_new": false,
+      "links": {
+        "self": "https://exercism.org/tracks/java",
+        "exercises": "https://exercism.org/tracks/java/exercises",
+        "concepts": "https://exercism.org/tracks/java/concepts"
+      },
+      "is_joined": true,
+      "num_learnt_concepts": 0,
+      "num_completed_exercises": 0,
+      "num_solutions": 2,
+      "has_notifications": false
+    }
+  ]
+}

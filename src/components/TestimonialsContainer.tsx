@@ -102,7 +102,6 @@ const TestimonialsContainer: React.FC = () => {
     setExerciseQuery(query);
   };
   const onSortSlugChange = (sortSlug: SortSlugEnum): void => {
-    console.log(sortSlug);
     setSelectedSortSlug(sortSlug);
   };
   const onTracksChange = (track: TrackWithTestimonialCountType): void => {
