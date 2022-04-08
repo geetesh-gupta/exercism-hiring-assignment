@@ -37,7 +37,7 @@ export const TestimonialsListItem: React.FC<TestimonialsApiRespResult> = ({
         "grid-cols-[40px_2fr_1fr_8px] grid-rows-[max-content_max-content] gap-2.5 p-lg " +
         "md:grid-cols-[40px_56px_2fr_3fr_1fr_8px] md:grid-rows-1 md:gap-4 md:p-xl"
       }
-      href={`/`}
+      href={`/testimonials/${id}`}
     >
       <span className="col-span-1 col-start-1 row-start-1 md:col-auto md:row-auto">
         <Icon src={track.icon_url} alt={track.title} />
