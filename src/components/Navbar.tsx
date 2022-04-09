@@ -171,7 +171,7 @@ export default function Navbar() {
                   </a>
                 </DropdownListItem>
               ))}
-              <div className="block xl:hidden">
+              <ul className="block xl:hidden">
                 <div className="my-3 h-px w-full bg-gray-100" />
                 <DropdownListItem key={"Dashboard"}>
                   <a href="/" className={"flex items-center gap-4"}>
@@ -185,7 +185,7 @@ export default function Navbar() {
                     </a>
                   </DropdownListItem>
                 ))}
-              </div>
+              </ul>
             </>
           </DropdownList>
         </div>
