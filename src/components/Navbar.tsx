@@ -112,7 +112,10 @@ const RightNavItems = () => {
         <a href="/">
           <Badge size={BadgeSizes.lg}>
             {/* <BorderGradient rounded> */}
-            <button className="border-gradient flex items-center gap-2 rounded-full border-4 border-transparent bg-labelDefault p-sm text-contrast">
+            <button
+              type="button"
+              className="border-gradient flex items-center gap-2 rounded-full border-4 border-transparent bg-labelDefault p-sm text-contrast"
+            >
               <Icon size={IconSizes.sm} src={badgeLogo} alt={"Badge Logo"} />
               <span className="text-lg font-semibold leading-xl">300K</span>
             </button>

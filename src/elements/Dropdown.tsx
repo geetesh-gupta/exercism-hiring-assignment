@@ -44,6 +44,7 @@ export const Dropdown: React.FC<{
           (widthFull ? " w-full " : " ") +
           className
         }
+        type="button"
         onClick={() => setDropdownVisible(!dropdownVisible)}
       >
         <>

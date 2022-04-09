@@ -12,6 +12,7 @@ const Button: React.FC<ButtonType> = ({
     className="flex items-center rounded border-2 border-button bg-default p-md text-labelSecondary shadow-button disabled:border-0 disabled:bg-disabled disabled:text-labelTertiary"
     onClick={onClick}
     disabled={disabled}
+    type="button"
   >
     {children}
   </button>

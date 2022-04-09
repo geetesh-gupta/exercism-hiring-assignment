@@ -46,6 +46,7 @@ const PaginationHandler: React.FC<PaginationHandlerProps> = ({
                   ? "border-paginationCurrent bg-paginationCurrent text-labelDefault"
                   : "border-button bg-default "
               }`}
+              type="button"
             >
               {num}
             </button>
